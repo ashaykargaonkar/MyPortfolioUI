@@ -1,0 +1,140 @@
+'use client'
+
+import React from 'react'
+import { motion } from 'framer-motion'
+
+const Highlight = ({ children }: { children: string }) => {
+  const keywords = [
+    'Software Engineer', 'Data Scientist', 'C#', '.NET', 'Web API',
+    'backend systems', 'intelligent applications', 'cloud services',
+    'engineering problems', 'technical focus', 'software development',
+    'AI', 'OCR', 'machine learning', 'data pipelines',
+    'chess analytics', 'Master\'s', 'Computer Science', 'AWS',
+    'database interactions', 'infrastructure', 'Chicago',
+    'table tennis', 'tech ideas'
+  ]
+
+  const words = children.split(' ')
+  return (
+    <span>
+      {words.map((word, index) => {
+        const cleanWord = word.replace(/[^a-zA-Z0-9]/g, '')
+        if (keywords.includes(cleanWord)) {
+          return (
+            <span key={index} className="text-blue-400">
+              {word}{' '}
+            </span>
+          )
+        }
+        return word + ' '
+      })}
+    </span>
+  )
+}
+
+const Hero = () => {
+  return (
+    <section id="hero" className="min-h-screen bg-gradient-to-b from-gray-900 to-black flex items-center justify-center">
+      <div className="container mx-auto px-6 sm:px-8 lg:px-12">
+        <div className="max-w-4xl mx-auto text-center text-white">
+          {/* Animated Hello Text */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            className="mb-4"
+          >
+            <motion.h1
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+              className="text-2xl md:text-3xl font-bold mb-4"
+            >
+              Hi,
+            </motion.h1>
+          </motion.div>
+
+          {/* Animated Name Text */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.5 }}
+            className="mb-8"
+          >
+            <motion.h2
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+              className="text-5xl md:text-7xl font-bold"
+            >
+              I'm Ashay Kargaonkar
+            </motion.h2>
+          </motion.div>
+
+          {/* Animated Description Text */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 1 }}
+            className="mb-12"
+          >
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+              className="text-lg md:text-xl text-gray-300"
+            >
+              <Highlight>
+                I’m Ashay Kargaonkar — a Software Engineer and Data Scientist with 4 years of experience, including 3 years focused on building scalable backend systems using C# .NET Web APIs. I specialize in creating cloud-integrated solutions with AWS and applying machine learning to real-world challenges. One of my key projects involves OCR-powered chess analytics, where I combined computer vision and structured parsing to digitize and analyze handwritten scoresheets.
+              </Highlight>
+            </motion.p>
+          </motion.div>
+
+          {/* Animated Additional Info Text */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 1.5 }}
+            className="mb-12"
+          >
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+              className="text-lg md:text-xl text-gray-300"
+            >
+              <Highlight>
+                With a Master’s in Computer Science, I bring both technical depth and a product-focused mindset. I’m passionate about clean architecture, automation, and turning ideas into practical tools that make a difference. Based in Chicago and open to relocation, I’m always looking to collaborate on meaningful work that blends engineering, data, and creativity.
+              </Highlight>
+            </motion.p>
+          </motion.div>
+
+          {/* Animated CTA Buttons */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 2 }}
+            className="flex flex-col sm:flex-row gap-4 justify-center"
+          >
+            <a
+              href="#contact"
+              className="inline-block bg-blue-400 text-white px-8 py-4 rounded-lg hover:bg-blue-500 transition-colors duration-300"
+            >
+              Get in Touch
+            </a>
+            <a
+              href="/AshayKargaonkarResume.pdf"
+              className="inline-block bg-blue-400 text-white px-8 py-4 rounded-lg hover:bg-blue-500 transition-colors duration-300"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Download Resume
+            </a>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default Hero

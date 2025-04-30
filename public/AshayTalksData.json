@@ -1,0 +1,168 @@
+{
+  "profile": {
+    "name": "Ashay Kargaonkar",
+    "title": "Software Engineer",
+    "maritalStatus": "Single",
+    "location": "Chicago, IL, USA",
+    "homeTown": "Nagpur, India",
+    "height": "6'1",
+    "hobbies": [
+      "Playing Table-Tennis",
+      "Playing Chess",
+      "Learning New Things in tech",
+      "Traveling",
+      "Watching movies specially 3D and 4D",
+      "Playing Online Video games like Valorant and Dota 2 or open to try new ones"
+    ],
+    "skills": [
+      "Creating BackendEnd web apis",
+      "Deployment of the application on AWS cloud using various services",
+      "Database design and migration",
+      "Create and apply Machine Learning Models",
+      "Data Preprocessing and providing advance data analysis",
+      "Bug fixing and optimizing the code",
+      "Creating good test cases for the application",
+      "Learning more about AWS Cloud and Machine Learning/AI"
+    ],
+    "toolsAndTechnology": [
+      ".NET",
+      "C#",
+      "JavaScript",
+      "ChatGPT",
+      "Python",
+      "R",
+      "R Studio",
+      "Visual Studio and Visual Studio Code",
+      "AWS DynamoDB",
+      "AWS Parameter Store",
+      "And many other AWS services too",
+      "Java",
+      "Postman",
+      "JIRA"
+    ],
+    "contact": {
+      "email": "ashaykargaonkar@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/ashay-kargaonkar/",
+      "github": "https://github.com/ashaykargaonkar",
+      "steam": "https://steamcommunity.com/profiles/76561198092074294",
+      "instagram": "https://www.instagram.com/ashay_kargaonkar"
+    },
+    "workExperiences": [
+      {
+        "position": "Software Engineer",
+        "company": "Tata Consultancy Services",
+        "client": "United Airlines",
+        "workTime": "March 2022 - Present",
+        "workLocation": "Chicago, IL",
+        "description": [
+          "Successfully migrated a legacy lounge pass management system for United Airlines, transferring ~21 million OneTimePass records from an SQL database to AWS DynamoDB, ensuring a seamless transition with zero data loss.",
+          "Designed optimized database tables in AWS DynamoDB and implemented scalable web APIs using C# and .NET, enhancing system functionality, data retrieval, and integration with AWS infrastructure.",
+          "Extensively worked with AWS services, including DynamoDB for storage, Lambda for serverless workflows, Parameter Store for secure configuration management, and EKS for deploying and managing containerized applications, ensuring scalability and performance.",
+          "Collaborated with DevOps engineers to deploy the application securely and efficiently using Veracode for security scanning and Harness pipelines for CI/CD automation, delivering high-quality releases.",
+          "Leveraged Docker to containerize the application, ensuring consistent development workflows across environments and enabling streamlined deployment processes.",
+          "Partnered with testers to identify, debug, and resolve application issues, guaranteeing high-quality releases and a seamless user experience."
+        ],
+        "tools": [
+          "AWS DynamoDB",
+          "AWS Lambda",
+          "AWS Parameter Store",
+          "AWS EKS",
+          ".NET C#",
+          "SQL",
+          "Docker",
+          "Kubernetes",
+          "Veracode",
+          "Harness",
+          "Postman",
+          "Swagger/OpenAPI",
+          "boto3",
+          "Git"
+        ]
+      },
+      {
+        "position": "Data Analyst Intern",
+        "company": "Instahub LLC",
+        "workTime": "January 2021 - March 2021",
+        "workLocation": "Philadelphia, PA (Remote)",
+        "description": [
+          "Fetched and analyzed sensor data stored in AWS RDS databases, accessed through MySQL Workbench, containing measurements from devices such as room usage, device activity, weather conditions, and various other sensor inputs.",
+          "Designed and developed machine learning models in R and Python to predict energy savings based on usage patterns and room occupancy, delivering actionable insights for optimizing energy consumption.",
+          "Performed statistical analysis on the sensor data to uncover trends and correlations, contributing to data-driven decision-making processes.",
+          "Created and visualized data insights using Tableau, designing analytical dashboards with interactive charts and tables for stakeholders to easily interpret complex data."
+        ],
+        "tools": [
+          "MySQL",
+          "Jupyter Notebook",
+          "SQL Workbench",
+          "Tableau",
+          "R Studio"
+        ]
+      },
+      {
+        "position": "Data Scientist",
+        "company": "Ezeelo Consumer Service PVT LTD",
+        "workTime": "August 2018 - August 2019",
+        "workLocation": "Nagpur, India",
+        "description": [
+          "Analyzed customer data for Ezeelo, an online consumer retail service with over 20,000 customers worldwide, providing insights into product demand across different districts and predicting inventory requirements for various countries.",
+          "Researched and implemented a scalable machine learning algorithm to recommend similar products to users, increasing product sales by 8% through targeted recommendations.",
+          "Normalized large datasets using SQL and Python to extract relevant insights, and performed detailed statistical analysis using R Studio to identify trends and forecast inventory needs.",
+          "Visualized customer behavior, sales trends, and pricing insights using Tableau and ggplot2, creating interactive dashboards and detailed visualizations to assist stakeholders in data-driven decision-making.",
+          "Delivered actionable insights into product demand, enabling the company to optimize inventory distribution and enhance customer satisfaction across diverse regions"
+        ],
+        "tools": [
+          "MySQL",
+          "Jupyter Notebook",
+          "Tableau",
+          "R Studio"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "university": "DePaul University",
+        "degree": "Master of Science in Computer Science",
+        "studyTime": "September 2019 - August 2021",
+        "location": "Chicago, IL, USA"
+      },
+      {
+        "university": "Pune University",
+        "degree": "Bachelor of Computer Engineering",
+        "studyTime": "June 2013 - June 2018",
+        "location": "Pune, MH, India"
+      }
+    ],
+    "certifications": [
+      "AWS Cloud Practitioner (Udemy)",
+      "Machine Learning A-Z (Udemy)",
+      "Crash Course Electronics (Udemy)"
+    ],
+    "projects": [
+      {
+        "name": "AshayTalks",
+        "technologies": "Frontend with React, backend with C# .NET, AI integration using GPT 4-o-mini.",
+        "description": "AshayTalks is an AI chatbot that provides a convenient way to explore my professional journey. Designed to save time and eliminate the hassle of navigating through traditional resumes or LinkedIn profiles, it offers users quick and clear insights into my career, skills, and experiences.",
+        "features": [
+          "Frontend: Built with React to create a modern, interactive, and user-friendly chat interface.",
+          "Backend: Powered by C# .NET to efficiently process inputs and manage data coordination.",
+          "AI Integration: Utilizes GPT 4-o-mini for natural language understanding and accurate responses."
+        ],
+        "futureEnhancements": [
+          "Voice Interaction: Enabling users to speak to the chatbot instead of typing.",
+          "Personalized AI Persona: Developing the chatbot to mimic my voice, mannerisms, and style of communication for a more human-like interaction—similar to AI characters in movies like Chappie.",
+          "Expanding Knowledge Base: Continuously updating the underlying professional data as my career evolves.",
+          "Advanced Query Handling: Incorporating support for more complex questions and broader topics."
+        ]
+      },
+      {
+        "name": "ThinkMove Core (ChessGrow)",
+        "technologies": "React for the frontend, C# .NET for the backend, AWS Textract for image processing, and AWS S3/DynamoDB for data storage and retrieval.",
+        "description": "ThinkMove Core, also known as ChessGrow, revolutionizes chess game analysis by enabling users to scan chess score sheets and convert them into PGN (Portable Game Notation) or FEN (Forsyth-Edwards Notation) formats. This project addresses the challenges of inaccurate chess notation and time-consuming game analysis by leveraging advanced image processing and machine learning techniques.",
+        "futureProspect": [
+          "There will be a mobile app where users can take images of their chess score sheets and instantly convert them into PGN format.",
+          "A new-era digital chess clock will be developed that connects to the phone for streamlined chess clock setup."
+        ]
+      }
+    ]
+  }
+}
