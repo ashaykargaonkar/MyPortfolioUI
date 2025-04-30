@@ -23,34 +23,83 @@ const Navbar = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Link href="#about" className="text-gray-300 hover:text-white transition-colors">
-                About
-              </Link>
+               <Link href="#about" className="text-gray-300 hover:text-white transition-colors" onClick={(e) => {
+                 e.preventDefault();
+                 const element = document.getElementById('about');
+                 if (element) {
+                   const offset = 72; // Height of navbar
+                   const elementTop = element.getBoundingClientRect().top;
+                   const offsetTop = elementTop + window.pageYOffset - offset;
+                   window.scrollTo({
+                     top: offsetTop,
+                     behavior: 'smooth'
+                   });
+                 }
+               }}>
+                 About
+               </Link>
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Link href="#projects" className="text-gray-300 hover:text-white transition-colors">
-                Projects
-              </Link>
+               <Link href="#work-experience" className="text-gray-300 hover:text-white transition-colors" onClick={(e) => {
+                 e.preventDefault();
+                 const element = document.getElementById('work-experience');
+                 if (element) {
+                   const offset = 72; // Height of navbar
+                   const elementTop = element.getBoundingClientRect().top;
+                   const offsetTop = elementTop + window.pageYOffset - offset;
+                   window.scrollTo({
+                     top: offsetTop,
+                     behavior: 'smooth'
+                   });
+                 }
+               }}>
+                 Work Experience
+               </Link>
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Link href="#skills" className="text-gray-300 hover:text-white transition-colors">
-                Skills
-              </Link>
+               <Link href="#projects" className="text-gray-300 hover:text-white transition-colors" onClick={(e) => {
+                 e.preventDefault();
+                 const element = document.getElementById('projects');
+                 if (element) {
+                   const offset = 72; // Height of navbar
+                   const elementTop = element.getBoundingClientRect().top;
+                   const offsetTop = elementTop + window.pageYOffset - offset;
+                   window.scrollTo({
+                     top: offsetTop,
+                     behavior: 'smooth'
+                   });
+                 }
+               }}>
+                 Projects
+               </Link>
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Link href="#contact" className="text-gray-300 hover:text-white transition-colors">
-                Contact
-              </Link>
+               <Link href="#skills" className="text-gray-300 hover:text-white transition-colors" onClick={(e) => {
+                 e.preventDefault();
+                 const element = document.getElementById('skills');
+                 if (element) {
+                   const offset = 72; // Height of navbar
+                   const elementTop = element.getBoundingClientRect().top;
+                   const offsetTop = elementTop + window.pageYOffset - offset;
+                   window.scrollTo({
+                     top: offsetTop,
+                     behavior: 'smooth'
+                   });
+                 }
+               }}>
+                 Skills
+               </Link>
             </motion.div>
+
           </div>
 
           {/* Mobile menu button */}

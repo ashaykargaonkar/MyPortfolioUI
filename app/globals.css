@@ -18,7 +18,17 @@
 
 @layer components {
   .section {
-    @apply py-16 px-4;
+    @apply py-32 px-4;
+    position: relative;
+    z-index: 1;
+  }
+
+  .section::before {
+    content: '';
+    display: block;
+    height: 72px;
+    visibility: hidden;
+    pointer-events: none;
   }
 
   .section-title {
