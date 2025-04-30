@@ -37,7 +37,7 @@ export default function Home() {
             <Certifications />
           </div>
 
-          <SidePanel isOpen={!isChatOpen} />
+          <SidePanel isOpen={!isChatOpen} isChatOpen={isChatOpen} />
         </motion.div>
       </main>
     </div>

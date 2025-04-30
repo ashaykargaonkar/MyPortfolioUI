@@ -8,9 +8,10 @@ import { faGithub, faLinkedin, faInstagram, faSteam } from '@fortawesome/free-br
 
 interface SidePanelProps {
   isOpen: boolean
+  isChatOpen: boolean
 }
 
-const SidePanel: React.FC<SidePanelProps> = ({ isOpen }) => {
+const SidePanel: React.FC<SidePanelProps> = ({ isOpen, isChatOpen }) => {
   const socialLinks = [
     {
       name: 'Email',
@@ -48,7 +49,7 @@ const SidePanel: React.FC<SidePanelProps> = ({ isOpen }) => {
 <motion.div
   initial={{ opacity: 0, x: 20 }}
   animate={{ opacity: 1, x: 0 }}
-  className={`fixed right-4 top-1/3 -translate-y-1/2 w-48 bg-gray-800 rounded-xl p-4 shadow-xl z-50 side-panel hidden md:block ${isOpen ? 'visible' : 'hidden'}`}
+  className={`fixed right-4 top-1/3 -translate-y-1/2 w-48 bg-gray-800 rounded-xl p-4 shadow-xl z-50 side-panel ${isOpen && !isChatOpen ? 'block' : 'hidden'}`}
 >
       <h3 className="text-lg font-bold text-white mb-4">Connect</h3>
       
