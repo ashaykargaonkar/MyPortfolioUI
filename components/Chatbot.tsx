@@ -84,6 +84,9 @@ const Chatbot: React.FC<ChatbotProps> = ({ onOpenChange }) => {
 
     try {
       const apiKey = process.env.NEXT_PUBLIC_OPENAI_API_KEY;
+      if (!apiKey) {
+        throw new Error('OpenAI API key is required');
+      }
       
       // Fetch JSON data
       const response = await fetch('/AshayTalksData.json');
@@ -110,18 +113,28 @@ const Chatbot: React.FC<ChatbotProps> = ({ onOpenChange }) => {
         },
         body: JSON.stringify(requestBody)
       });
-
-      if (!openAiResponse.ok) throw new Error(`OpenAI API Error: ${openAiResponse.status}`);
+      
+      if (!openAiResponse.ok) {
+        const errorData = await openAiResponse.json().catch(() => ({}));
+        throw new Error(`OpenAI API Error: ${errorData.error?.message || openAiResponse.status}`);
+      }
       const responseData = await openAiResponse.json();
 
       // Extract response
       const chatGptMessage = responseData?.choices?.[0]?.message?.content || "No content found in response.";
       setMessages(prev => [...prev, { content: chatGptMessage, role: 'assistant' }]);
-      messagesRef.current?.scrollTo(0, messagesRef.current.scrollHeight);
+      messagesRef.current?.scrollTo({
+        top: messagesRef.current.scrollHeight,
+        behavior: 'smooth'
+      });
     } catch (error) {
       console.error("Error in fetching response:", error);
-      setMessages(prev => [...prev, { content: `Error: ${error.message}`, role: 'assistant' }]);
-      messagesRef.current?.scrollTo(0, messagesRef.current.scrollHeight);
+      const errorMessage = error instanceof Error ? error.message : 'An error occurred';
+      setMessages(prev => [...prev, { content: `Error: ${errorMessage}`, role: 'assistant' }]);
+      messagesRef.current?.scrollTo({
+        top: messagesRef.current.scrollHeight,
+        behavior: 'smooth'
+      });
     } finally {
       setIsSending(false);
     }
