@@ -5,14 +5,14 @@ import { motion } from 'framer-motion'
 
 const WorkExperience = () => {
   return (
-    <section id="work-experience" className="py-20 bg-gradient-to-b from-gray-900 to-black">
+    <section id="work-experience" className="py-24 bg-gradient-to-b from-gray-900 to-black">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="max-w-4xl mx-auto text-white"
+          className="max-w-4xl mx-auto text-white mt-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">Work Experience</h2>
           
