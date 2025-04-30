@@ -20,7 +20,7 @@ export default function Home() {
     <div className="min-h-screen bg-black">
       <Navbar />
       <Chatbot onOpenChange={setIsChatOpen} />
-      <main className="min-h-screen relative">
+      <main className="min-h-screen relative pt-28">
         <motion.div 
           initial={{ y: 20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}

@@ -45,11 +45,11 @@ const SidePanel: React.FC<SidePanelProps> = ({ isOpen }) => {
   ]
 
   return (
-    <motion.div
-      initial={{ opacity: 0, x: 20 }}
-      animate={{ opacity: 1, x: 0 }}
-      className={`fixed right-4 top-1/3 -translate-y-1/2 w-48 bg-gray-800 rounded-xl p-4 shadow-xl z-50 side-panel ${isOpen ? 'visible' : 'hidden'}`}
-    >
+<motion.div
+  initial={{ opacity: 0, x: 20 }}
+  animate={{ opacity: 1, x: 0 }}
+  className={`fixed right-4 top-1/3 -translate-y-1/2 w-48 bg-gray-800 rounded-xl p-4 shadow-xl z-50 side-panel hidden md:block ${isOpen ? 'visible' : 'hidden'}`}
+>
       <h3 className="text-lg font-bold text-white mb-4">Connect</h3>
       
       <div className="space-y-3">
