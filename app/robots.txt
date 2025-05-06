@@ -8,5 +8,5 @@ Sitemap: https://ashaykargaonkar.com/sitemap.xml
 # Disallow crawling of admin and API routes
 Disallow: /admin/
 Disallow: /api/
-
-# Crawl-delay: 10  # Uncomment if needed to limit crawl rate
+Disallow: /_next/
+Disallow: /node_modules/

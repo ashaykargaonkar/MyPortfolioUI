@@ -1,13 +1,13 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import { motion } from 'framer-motion'
 import React from 'react'
+import { JsonLd, getPersonSchema } from '@/components/StructuredData'
 
 const inter = Inter({ subsets: ['latin'] })
 
-const title = 'Ashay Kargaonkar - Machine Learning Engineer';
-const description = 'Portfolio of Ashay Kargaonkar, a Machine Learning Engineer with expertise in modern web technologies.';
+const title = 'Ashay Kargaonkar - Software Engineer & Data Scientist';
+const description = 'Software Engineer & Data Scientist with 4+ years of experience in C# .NET, AWS, and AI. Specializing in building robust backend systems and intelligent applications.';
 const url = 'https://ashaykargaonkar.com';
 
 export const metadata: Metadata = {
@@ -17,13 +17,22 @@ export const metadata: Metadata = {
   },
   description: description,
   keywords: [
+    'Software Engineer',
+    'Data Scientist',
     'Machine Learning Engineer',
     'Web Developer',
-    'React',
+    'C#',
+    '.NET',
+    'AWS',
+    'Backend Developer',
+    'API Development',
+    'Cloud Architecture',
     'Next.js',
     'TypeScript',
     'Node.js',
     'Portfolio',
+    'Chicago Developer',
+    'Full Stack Developer'
   ],
   authors: [{ name: 'Ashay Kargaonkar' }],
   creator: 'Ashay Kargaonkar',
@@ -71,8 +80,13 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const personSchema = getPersonSchema()
+
   return (
     <html lang="en">
+      <head>
+        <JsonLd data={personSchema} />
+      </head>
       <body className={inter.className}>
         <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black">
           {children}
