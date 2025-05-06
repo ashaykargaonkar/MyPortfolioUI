@@ -12,9 +12,9 @@ const Skills = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="max-w-4xl mx-auto text-center text-white"
+          className="max-w-4xl mx-auto text-white"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-12">Skills</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">Skills</h2>
 
           {/* Key Skills Section */}
           <div className="mb-12">

@@ -6,13 +6,13 @@ import { motion } from 'framer-motion'
 const WorkExperience = () => {
   return (
     <section id="work-experience" className="py-12 md:py-24 bg-gradient-to-b from-gray-900 to-black">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="max-w-3xl mx-auto text-white mt-8 md:mt-16"
+          className="max-w-6xl mx-auto text-white mt-8 md:mt-16"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 md:mb-12 text-center">Work Experience</h2>
           
@@ -97,6 +97,44 @@ const WorkExperience = () => {
               <p className="text-gray-300 text-sm sm:text-base">
                 Delivered actionable insights into product demand, enabling the company to optimize inventory distribution and enhance customer satisfaction across diverse regions.
               </p>
+            </div>
+          </div>
+
+          {/* Data Scientist */}
+          <div className="bg-gray-800 rounded-lg p-4 sm:p-6 mb-8 sm:mb-12">
+            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-4">
+              <div>
+                <h3 className="text-xl sm:text-2xl font-bold text-blue-400">Data Scientist</h3>
+                <h4 className="text-lg sm:text-xl font-semibold text-blue-400">Ezeelo Consumer Service PVT LTD</h4>
+              </div>
+              <div className="flex flex-col items-end">
+                <p className="text-gray-300">August 2018 - August 2019</p>
+                <p className="text-gray-300">Location: Nagpur, India</p>
+              </div>
+            </div>
+
+            <div className="space-y-4 mt-6">
+              <p className="text-gray-300 text-sm sm:text-base">
+                Analyzed customer data to predict inventory needs and optimize global distribution using <span className="text-blue-400 font-semibold">prediction algorithms and clustering</span>, implementing product recommendation models that <span className="text-blue-400 font-semibold">increased sales by 8%</span>.
+              </p>
+              <p className="text-gray-300 text-sm sm:text-base">
+                Leveraged <span className="text-blue-400 font-semibold">SQL and Python</span> for data normalization, improving trend analysis and insight extraction.
+              </p>
+              <p className="text-gray-300 text-sm sm:text-base">
+                Designed interactive <span className="text-blue-400 font-semibold">Tableau dashboards</span> to visualize product demand, aiding stakeholders in decision-making.
+              </p>
+            </div>
+
+            <div className="mt-6">
+              <h4 className="text-lg font-semibold mb-2">Tools & Technologies</h4>
+              <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
+                <span className="text-blue-400 font-semibold text-xs sm:text-sm">Python</span>
+                <span className="text-blue-400 font-semibold text-xs sm:text-sm">SQL</span>
+                <span className="text-blue-400 font-semibold text-xs sm:text-sm">Tableau</span>
+                <span className="text-blue-400 font-semibold text-xs sm:text-sm">Data Analysis</span>
+                <span className="text-blue-400 font-semibold text-xs sm:text-sm">Predictive Modeling</span>
+                <span className="text-blue-400 font-semibold text-xs sm:text-sm">Clustering</span>
+              </div>
             </div>
           </div>
         </motion.div>

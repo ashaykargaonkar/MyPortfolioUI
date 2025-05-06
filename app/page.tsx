@@ -12,6 +12,7 @@ import Chatbot from '../components/Chatbot'
 import Navbar from '../components/Navbar'
 import SidePanel from '../components/SidePanel'
 import { motion } from 'framer-motion'
+import UpcomingProjects from '../components/UpcomingProjects'
 
 export default function Home() {
   const [isChatOpen, setIsChatOpen] = React.useState(false)
@@ -35,6 +36,7 @@ export default function Home() {
             <Projects />
             <Skills />
             <Certifications />
+            <UpcomingProjects />
           </div>
 
           <SidePanel isOpen={!isChatOpen} isChatOpen={isChatOpen} />

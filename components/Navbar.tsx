@@ -39,7 +39,16 @@ const Navbar = () => {
       <div className="container mx-auto px-6 flex items-center h-full">
         <div className="flex flex-row items-center justify-between w-full">
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <Link href="#" className="text-2xl font-bold text-white">Ashay</Link>
+            <Link 
+              href="#" 
+              onClick={(e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }} 
+              className="text-2xl font-bold text-white hover:text-blue-500 transition-colors"
+            >
+              Ashay
+            </Link>
           </motion.div>
 
           <div className="hidden md:flex space-x-8 items-center">
@@ -83,15 +92,31 @@ const Navbar = () => {
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 z-50 flex flex-col items-center justify-center h-screen p-4">
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 0.9 }} exit={{ opacity: 0 }} className="absolute inset-0 bg-black/60 backdrop-blur-sm" onClick={() => setIsMenuOpen(false)} />
 
-            <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.95 }} transition={{ type: 'spring', stiffness: 260, damping: 22 }} className="relative z-50 w-full max-w-xs bg-gray-800 rounded-xl shadow-2xl px-6 py-6 flex flex-col items-center justify-center">
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.95 }} 
+              animate={{ opacity: 1, scale: 1 }} 
+              exit={{ opacity: 0, scale: 0.95 }} 
+              transition={{ type: 'spring', stiffness: 300, damping: 25 }} 
+              className="relative z-50 w-full max-w-xs bg-gray-900/95 backdrop-blur-lg border border-gray-800 rounded-2xl shadow-2xl px-6 py-8 flex flex-col items-center justify-center"
+            >
               <button onClick={() => setIsMenuOpen(false)} className="absolute top-2 right-2 text-gray-400 hover:text-white text-lg">
                 <FontAwesomeIcon icon={faTimes} />
               </button>
 
-              <div className="w-full space-y-3 mt-2">
+              <div className="w-full space-y-4 mt-6">
                 {menuItems.map(item => (
-                  <motion.div key={item.id} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: item.id * 0.05 }}>
-                    <Link href={item.href} onClick={(e) => handleScroll(e, item.href.substring(1))} className="block text-center py-2 px-3 rounded-md bg-gray-700 hover:bg-gray-600 transition text-gray-300 hover:text-white text-sm font-medium">
+                  <motion.div 
+                    key={item.id} 
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: item.id * 0.05, type: 'spring', stiffness: 300 }}
+                    className="w-full"
+                  >
+                    <Link 
+                      href={item.href} 
+                      onClick={(e) => handleScroll(e, item.href.substring(1))} 
+                      className="block w-full py-3 px-6 rounded-lg text-center text-white hover:bg-gray-700/50 transition-all duration-300 text-base font-medium border border-gray-700 hover:border-blue-500/30 hover:text-blue-400"
+                    >
                       {item.text}
                     </Link>
                   </motion.div>

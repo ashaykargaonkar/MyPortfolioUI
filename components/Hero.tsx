@@ -85,7 +85,7 @@ const Hero = () => {
               className="text-base md:text-lg lg:text-xl text-gray-300"
             >
               <Highlight>
-                I’m Ashay Kargaonkar — a Software Engineer and Data Scientist with 4 years of experience, including 3 years focused on building scalable backend systems using C# .NET Web APIs. I specialize in creating cloud-integrated solutions with AWS and applying machine learning to real-world challenges. One of my key projects involves OCR-powered chess analytics, where I combined computer vision and structured parsing to digitize and analyze handwritten scoresheets.
+                a Software Engineer and Data Scientist with 4+ years of experience building scalable C# .NET APIs and AWS-integrated systems. I combine backend engineering with AI to create practical tools, like AshayTalks, a chatbot that shares my journey and projects, and ThinkMoves, an OCR-powered chess analytics platform.
               </Highlight>
             </motion.p>
           </motion.div>
