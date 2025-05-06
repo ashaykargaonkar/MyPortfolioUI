@@ -76,12 +76,12 @@ const Certifications = () => {
                       <h3 className="text-lg sm:text-xl font-semibold text-blue-400 truncate">
                         {cert.name}
                       </h3>
-                      <span className="text-sm text-gray-400 bg-gray-700 px-2 py-0.5 rounded whitespace-nowrap">
+                      <span className="text-sm text-blue-400 bg-blue-900/20 px-2 py-0.5 rounded whitespace-nowrap">
                         {cert.year}
                       </span>
                     </div>
                     <div className="mt-2 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                      <p className="text-gray-300 text-sm">{cert.platform}</p>
+                      <p className="text-blue-400 font-medium text-sm">{cert.platform}</p>
                       <Link 
                         href={cert.pdf} 
                         target="_blank"

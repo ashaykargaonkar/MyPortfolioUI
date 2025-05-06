@@ -35,19 +35,19 @@ const WorkExperience = () => {
 
             <div className="space-y-4 mt-6">
               <p className="text-gray-300 text-sm sm:text-base">
-                Successfully migrated a legacy lounge pass management system for United Airlines, transferring <span className="text-blue-400 font-semibold">~21 million OneTimePass records</span> from an SQL database to <span className="text-blue-400 font-semibold">AWS DynamoDB</span>, ensuring a seamless transition with zero data loss.
+                Successfully migrated a legacy lounge pass management system for <span className="text-blue-400 font-semibold">United Airlines</span>, transferring <span className="text-blue-400 font-semibold">~21 million OneTimePass records</span> from an <span className="text-blue-400 font-semibold">SQL</span> database to <span className="text-blue-400 font-semibold">AWS DynamoDB</span>, ensuring a seamless transition with zero data loss.
               </p>
               <p className="text-gray-300 text-sm sm:text-base">
-                Designed optimized database tables in <span className="text-blue-400 font-semibold">AWS DynamoDB</span> and implemented scalable web APIs using <span className="text-blue-400 font-semibold">C# and .NET</span>, enhancing system functionality, data retrieval, and integration with AWS infrastructure.
+                Designed optimized database tables in <span className="text-blue-400 font-semibold">AWS DynamoDB</span> and implemented scalable <span className="text-blue-400 font-semibold">web APIs</span> using <span className="text-blue-400 font-semibold">C# and .NET</span>, enhancing system functionality, data retrieval, and integration with <span className="text-blue-400 font-semibold">AWS infrastructure</span>.
               </p>
               <p className="text-gray-300 text-sm sm:text-base">
-                Extensively worked with AWS services, including <span className="text-blue-400 font-semibold">DynamoDB for storage, AWS Lambda for serverless workflows, AWS Parameter Store</span> for secure configuration management, and AWS Elastic BeanStalk for deploying and managing containerized applications, ensuring scalability and performance.
+                Extensively worked with <span className="text-blue-400 font-semibold">AWS services</span>, including <span className="text-blue-400 font-semibold">DynamoDB</span> for storage, <span className="text-blue-400 font-semibold">AWS Lambda</span> for serverless workflows, <span className="text-blue-400 font-semibold">AWS Parameter Store</span> for secure configuration management, and <span className="text-blue-400 font-semibold">AWS Elastic Beanstalk</span> for deploying and managing containerized applications, ensuring <span className="text-blue-400 font-semibold">scalability and performance</span>.
               </p>
               <p className="text-gray-300 text-sm sm:text-base">
-                Collaborated with DevOps engineers to deploy the application securely and efficiently using <span className="text-blue-400 font-semibold">Veracode for security scanning and Harness pipelines</span> for CI /CD automation, delivering high-quality releases.
+                Collaborated with <span className="text-blue-400 font-semibold">DevOps</span> engineers to deploy the application securely and efficiently using <span className="text-blue-400 font-semibold">Veracode</span> for security scanning and <span className="text-blue-400 font-semibold">Harness</span> pipelines for <span className="text-blue-400 font-semibold">CI/CD</span> automation, delivering high-quality releases.
               </p>
               <p className="text-gray-300 text-sm sm:text-base">
-                Leveraged <span className="text-blue-400 font-semibold">Docker</span> to containerize the application, ensuring consistent development workflows across environments and enabling streamlined deployment processes.
+                Leveraged <span className="text-blue-400 font-semibold">Docker</span> to containerize the application, ensuring consistent development workflows across environments and enabling <span className="text-blue-400 font-semibold">streamlined deployment</span> processes.
               </p>
               <p className="text-gray-300 text-sm sm:text-base">
                 Partnered with testers to identify, debug, and resolve application issues, guaranteeing high-quality releases and a seamless user experience.
@@ -89,10 +89,10 @@ const WorkExperience = () => {
 
             <div className="space-y-4 mt-6">
               <p className="text-gray-300 text-sm sm:text-base">
-                Analyzed large datasets using <span className="text-blue-400 font-semibold">SQL and Python</span> to extract relevant insights, and performed detailed statistical analysis using R Studio to identify trends and forecast inventory needs.
+                Analyzed large datasets using <span className="text-blue-400 font-semibold">SQL and Python</span> to extract relevant insights, and performed detailed <span className="text-blue-400 font-semibold">statistical analysis</span> using <span className="text-blue-400 font-semibold">R Studio</span> to identify trends and forecast inventory needs.
               </p>
               <p className="text-gray-300 text-sm sm:text-base">
-                Visualized customer behavior, sales trends, and pricing insights using <span className="text-blue-400 font-semibold">Tableau and ggplot2</span>, creating interactive dashboards and detailed visualizations to assist stakeholders in data-driven decision-making.
+                Visualized customer behavior, sales trends, and pricing insights using <span className="text-blue-400 font-semibold">Tableau and ggplot2</span>, creating <span className="text-blue-400 font-semibold">interactive dashboards</span> and detailed visualizations to assist stakeholders in <span className="text-blue-400 font-semibold">data-driven decision-making</span>.
               </p>
               <p className="text-gray-300 text-sm sm:text-base">
                 Delivered actionable insights into product demand, enabling the company to optimize inventory distribution and enhance customer satisfaction across diverse regions.
@@ -115,13 +115,13 @@ const WorkExperience = () => {
 
             <div className="space-y-4 mt-6">
               <p className="text-gray-300 text-sm sm:text-base">
-                Analyzed customer data to predict inventory needs and optimize global distribution using <span className="text-blue-400 font-semibold">prediction algorithms and clustering</span>, implementing product recommendation models that <span className="text-blue-400 font-semibold">increased sales by 8%</span>.
+                Analyzed customer data to predict inventory needs and optimize global distribution using <span className="text-blue-400 font-semibold">prediction algorithms and clustering</span>, implementing <span className="text-blue-400 font-semibold">product recommendation models</span> that <span className="text-blue-400 font-semibold">increased sales by 8%</span>.
               </p>
               <p className="text-gray-300 text-sm sm:text-base">
-                Leveraged <span className="text-blue-400 font-semibold">SQL and Python</span> for data normalization, improving trend analysis and insight extraction.
+                Leveraged <span className="text-blue-400 font-semibold">SQL and Python</span> for <span className="text-blue-400 font-semibold">data normalization</span>, improving <span className="text-blue-400 font-semibold">trend analysis</span> and <span className="text-blue-400 font-semibold">insight extraction</span>.
               </p>
               <p className="text-gray-300 text-sm sm:text-base">
-                Designed interactive <span className="text-blue-400 font-semibold">Tableau dashboards</span> to visualize product demand, aiding stakeholders in decision-making.
+                Designed interactive <span className="text-blue-400 font-semibold">Tableau dashboards</span> to visualize <span className="text-blue-400 font-semibold">product demand</span>, aiding stakeholders in <span className="text-blue-400 font-semibold">decision-making</span>.
               </p>
             </div>
 

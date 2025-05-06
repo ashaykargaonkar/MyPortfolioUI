@@ -5,13 +5,10 @@ import { motion } from 'framer-motion'
 
 const Highlight = ({ children }: { children: string }) => {
   const keywords = [
-    'Software Engineer', 'Data Scientist', 'C#', '.NET', 'Web API',
-    'backend systems', 'intelligent applications', 'cloud services',
-    'engineering problems', 'technical focus', 'software development',
-    'AI', 'OCR', 'machine learning', 'data pipelines',
-    'chess analytics', 'Master\'s', 'Computer Science', 'AWS',
-    'database interactions', 'infrastructure', 'Chicago',
-    'table tennis', 'tech ideas'
+    'Software Engineer', 'Data Scientist', 'C#', '.NET', 'backend APIs',
+    'AWS', 'AshayTalks', 'chatbot', 'ThinkMoves', 'OCR-driven',
+    'chess analytics', 'Master\'s', 'Computer Science', 'clean architecture',
+    'automation', 'Chicago', 'relocation', 'software', 'data', 'innovation'
   ]
 
   const words = children.split(' ')
@@ -85,7 +82,7 @@ const Hero = () => {
               className="text-base md:text-lg lg:text-xl text-gray-300"
             >
               <Highlight>
-                a Software Engineer and Data Scientist with 4+ years of experience building scalable C# .NET APIs and AWS-integrated systems. I combine backend engineering with AI to create practical tools, like AshayTalks, a chatbot that shares my journey and projects, and ThinkMoves, an OCR-powered chess analytics platform.
+                I'm a Software Engineer and Data Scientist with 4+ years of experience, including 3+ years building robust backend APIs using C# .NET and integrating systems with AWS. I specialize in combining engineering with AI to build real-world tools—like AshayTalks, a chatbot showcasing my journey and work, and ThinkMoves, an OCR-driven chess analytics platform.
               </Highlight>
             </motion.p>
           </motion.div>
@@ -104,7 +101,7 @@ const Hero = () => {
               className="text-base md:text-lg lg:text-xl text-gray-300"
             >
               <Highlight>
-                With a Master’s in Computer Science, I bring both technical depth and a product-focused mindset. I’m passionate about clean architecture, automation, and turning ideas into practical tools that make a difference. Based in Chicago and open to relocation, I’m always looking to collaborate on meaningful work that blends engineering, data, and creativity.
+                With a Master's in Computer Science, I bring strong technical expertise and a product-driven mindset. I'm passionate about clean architecture, automation, and transforming ideas into impactful solutions. Based in Chicago and open to relocation, I'm eager to collaborate on meaningful projects at the intersection of software, data, and innovation.
               </Highlight>
             </motion.p>
           </motion.div>
