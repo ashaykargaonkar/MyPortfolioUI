@@ -25,6 +25,7 @@ const projects = [
 ];
 
 const UpcomingProjects = () => {
+  
   return (
     <section id="upcoming-projects" className="py-20 bg-gradient-to-b from-gray-900 to-black">
       <div className="container mx-auto px-4">
@@ -52,14 +53,14 @@ const UpcomingProjects = () => {
             >
               <div className="h-full bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-800 group-hover:border-blue-500/30 transition-all duration-300">
                 <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-xl font-bold text-white">{project.title}</h3>
-                  <span className={`text-xs font-medium px-2.5 py-1 rounded-full ${project.statusColor}`}>
-                    {project.status}
-                  </span>
-                </div>
-                <p className="text-gray-400 mb-4">{project.description}</p>
-                <div className="absolute bottom-4 left-6 right-6 h-1 bg-gradient-to-r from-blue-500/0 via-blue-500 to-blue-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </div>
+  <h3 className="text-xl font-bold text-white">{project.title}</h3>
+  <span className={`text-xs font-medium px-2.5 py-1 rounded-full ${project.statusColor}`}>
+    {project.status}
+  </span>
+</div>
+<p className="text-gray-400 mb-4">{project.description}</p>
+<div className="absolute bottom-4 left-6 right-6 h-1 bg-gradient-to-r from-blue-500/0 via-blue-500 to-blue-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
             </motion.div>
           ))}
         </div>

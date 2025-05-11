@@ -8,7 +8,7 @@ interface Project {
   image: string;
   details: Array<{
     title: string;
-    content: string | string[];
+    content: string | string[] | React.ReactNode;
   }>;
 }
 
@@ -44,13 +44,19 @@ const Highlight = ({ children }: { children: string }) => {
 const projects: Project[] = [
   {
     title: 'AshayTalks',
-    description: 'An AI chatbot that provides a convenient way to explore my professional journey.',
+    description: 'An AI-powered chatbot designed to make my professional journey easy to explore.',
     tech: ['React', 'GPT 4-o-mini', 'TypeScript', 'Tailwind CSS'],
     image: '/ChatGPT Image AshayTalks.png',
     details: [
       {
         title: 'Overview',
-        content: 'AshayTalks is an AI chatbot that provides a convenient way to explore my professional journey. Designed to save time and eliminate the hassle of navigating through traditional resumes or LinkedIn profiles, it offers users quick and clear insights into my career, skills, and experiences. Powered by GPT 4-o-mini, the chatbot ensures accurate and reliable responses for a seamless interaction.'
+        content: (
+          <>
+            <Highlight>AshayTalks is a personal AI chatbot I created to give recruiters and collaborators a faster, more intuitive way to understand my background—without digging through resumes or LinkedIn profiles. Built with GPT-4o-mini, it provides clear, reliable answers about my work experience, technical skills, and projects.</Highlight>
+            <br /><br />
+            <Highlight>I developed AshayTalks to save time during hiring conversations and to offer a more interactive way to showcase who I am professionally. It’s continuously evolving as I add new projects, skills, and experiences, making it a living reflection of my growth as a Software Engineer and Data Scientist.</Highlight>
+          </>
+        )
       },
       {
         title: 'How It Works',
@@ -81,13 +87,19 @@ const projects: Project[] = [
   },
   {
     title: 'ThinkMoves',
-    description: 'A cutting-edge chess analysis platform that revolutionizes the way chess players analyze and share their games.',
+    description: 'A smart chess analytics platform that bridges handwritten score sheets and digital game analysis.',
     tech: ['React', '.NET Core', 'AWS', 'TensorFlow', 'OpenCV'],
     image: '/ChatGPT Image ThinkMoves.png',
     details: [
       {
         title: 'Overview',
-        content: 'ThinkMoves is a revolutionary chess analysis platform that uses advanced computer vision and machine learning to convert physical chess score sheets into digital format. It makes it easier for chess players to analyze their games and share them with the chess community.'
+        content: (
+          <>
+            <Highlight>ThinkMoves is an AI-powered chess analysis platform I built to simplify the way players review and share their games. By using computer vision and machine learning, it converts physical chess score sheets into accurate digital PGNs, making post-game analysis effortless.</Highlight>
+            <br /><br />
+            <Highlight>Designed for players, coaches, and organizers, ThinkMoves eliminates manual data entry and helps users focus on strategy and improvement. It’s built to scale across different sheet formats and continues to evolve with smarter OCR and move validation systems.</Highlight>
+          </>
+        )
       },
       {
         title: 'How It Works',
@@ -164,29 +176,86 @@ const Projects = () => {
                   </p>
 
                   <div className="space-y-8">
-                    {project.details.map((section, sectionIndex) => (
-                      <div key={sectionIndex} className="space-y-4">
-                        <h4 className="text-xl font-semibold text-white">{section.title}</h4>
-                        {Array.isArray(section.content) ? (
-                          <ul className="space-y-3">
-                            {section.content.map((item, itemIndex) => (
-                              <li key={itemIndex} className="text-white/80 flex items-start">
-                                <svg className="w-5 h-5 text-blue-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                <span>
-                                  <Highlight>{item}</Highlight>
-                                </span>
-                              </li>
-                            ))}
-                          </ul>
-                        ) : (
-                          <p className="text-white/80">
-                            <Highlight>{section.content}</Highlight>
-                          </p>
-                        )}
-                      </div>
-                    ))}
+                    {(() => {
+  // Find index of the Overview section
+  const overviewIndex = project.details.findIndex(section => section.title.toLowerCase() === 'overview');
+  const [open, setOpen] = React.useState(false);
+  const arrowIcon = open ? (
+    <svg className="w-6 h-6 text-blue-400 inline-block ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" /></svg>
+  ) : (
+    <svg className="w-6 h-6 text-blue-400 inline-block ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+  );
+  return (
+    <>
+      {/* Render Overview */}
+      {project.details.slice(0, overviewIndex + 1).map((section, sectionIndex) => (
+        <div key={sectionIndex} className="space-y-4">
+          <h4 className="text-xl font-semibold text-white">{section.title}</h4>
+          {Array.isArray(section.content) ? (
+            <ul className="space-y-3">
+              {section.content.map((item, itemIndex) => (
+                <li key={itemIndex} className="text-white/80 flex items-start">
+                  <svg className="w-5 h-5 text-blue-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span>
+                    <Highlight>{item}</Highlight>
+                  </span>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            typeof section.content === 'string' ? (
+              <p className="text-white/80">
+                <Highlight>{section.content}</Highlight>
+              </p>
+            ) : (
+              <div className="text-white/80">{section.content}</div>
+            )
+          )}
+        </div>
+      ))}
+      {/* Arrow Button */}
+      {overviewIndex < project.details.length - 1 && (
+        <button
+          className="flex items-center mt-4 text-blue-400 hover:text-blue-300 focus:outline-none"
+          onClick={() => setOpen(open => !open)}
+          aria-label={open ? 'Collapse details' : 'Expand details'}
+        >
+          {open ? 'Hide Details' : 'Show More'} {arrowIcon}
+        </button>
+      )}
+      {/* Collapsible Sections */}
+      {open && project.details.slice(overviewIndex + 1).map((section, sectionIndex) => (
+        <div key={sectionIndex + overviewIndex + 1} className="space-y-4 animate-fade-in">
+          <h4 className="text-xl font-semibold text-white">{section.title}</h4>
+          {Array.isArray(section.content) ? (
+            <ul className="space-y-3">
+              {section.content.map((item, itemIndex) => (
+                <li key={itemIndex} className="text-white/80 flex items-start">
+                  <svg className="w-5 h-5 text-blue-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span>
+                    <Highlight>{item}</Highlight>
+                  </span>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            typeof section.content === 'string' ? (
+              <p className="text-white/80">
+                <Highlight>{section.content}</Highlight>
+              </p>
+            ) : (
+              <div className="text-white/80">{section.content}</div>
+            )
+          )}
+        </div>
+      ))}
+    </>
+  );
+})()}
                   </div>
 
                   <div className="mt-12 flex flex-wrap gap-3">
