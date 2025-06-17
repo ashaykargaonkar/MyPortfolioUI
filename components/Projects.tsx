@@ -6,6 +6,7 @@ interface Project {
   description: string;
   tech: string[];
   image: string;
+  status: string;
   details: Array<{
     title: string;
     content: string | string[] | React.ReactNode;
@@ -45,8 +46,23 @@ const projects: Project[] = [
   {
     title: 'AshayTalks',
     description: 'An AI-powered chatbot designed to make my professional journey easy to explore.',
-    tech: ['React', 'GPT 4-o-mini', 'TypeScript', 'Tailwind CSS'],
+    tech: [
+      'React',
+      'Next.js',
+      'TypeScript',
+      'C#',
+      '.NET Core',
+      'JSON',
+      'GPT-4o-mini',
+      'Vercel',
+      'Postman',
+      'GitHub',
+      'Vibe Coding',
+      'AI Chatbot',
+      'Natural Language Processing'
+    ],
     image: '/ChatGPT Image AshayTalks.png',
+    status: 'Planning',
     details: [
       {
         title: 'Overview',
@@ -68,13 +84,6 @@ const projects: Project[] = [
         ]
       },
       {
-        title: 'Key Technologies',
-        content: [
-          'Frontend: Built with React to create a modern, interactive, and user-friendly chat interface.',
-          'AI Integration: Utilizes GPT 4-o-mini for natural language understanding and accurate responses.'
-        ]
-      },
-      {
         title: 'Future Enhancements',
         content: [
           'Voice Interaction: Enabling users to speak to the chatbot instead of typing.',
@@ -87,46 +96,54 @@ const projects: Project[] = [
   },
   {
     title: 'ThinkMoves',
-    description: 'A smart chess analytics platform that bridges handwritten score sheets and digital game analysis.',
-    tech: ['React', '.NET Core', 'AWS', 'TensorFlow', 'OpenCV'],
+    description: 'AI-powered chess analysis platform converting handwritten scoresheets into accurate digital PGNs.',
+    tech: [
+      'React',
+      'Next.js',
+      'TypeScript',
+      '.NET Core',
+      'Cognito',
+      'App Runner',
+      'Azure OCR',
+      'TensorFlow',
+      'OpenCV',
+      'YOLO',
+      'ResNet',
+      'TrOCR',
+      'Vercel',
+      'Chess.js'
+    ],
     image: '/ChatGPT Image ThinkMoves.png',
+    status: 'In Progress',
     details: [
       {
         title: 'Overview',
         content: (
           <>
-            <Highlight>ThinkMoves is an AI-powered chess analysis platform I built to simplify the way players review and share their games. By using computer vision and machine learning, it converts physical chess score sheets into accurate digital PGNs, making post-game analysis effortless.</Highlight>
+            <Highlight>ThinkMoves simplifies how players, coaches, and organizers review chess games by converting handwritten scoresheets into precise, shareable PGNs. Built with machine learning and computer vision, it eliminates manual data entry and unlocks effortless post-game analysis.</Highlight>
             <br /><br />
-            <Highlight>Designed for players, coaches, and organizers, ThinkMoves eliminates manual data entry and helps users focus on strategy and improvement. It’s built to scale across different sheet formats and continues to evolve with smarter OCR and move validation systems.</Highlight>
+            <Highlight>Designed to adapt across different sheet formats, ThinkMoves uses advanced OCR, layout detection, and legal move validation to ensure accuracy and scalability. It's constantly evolving with smarter models and new features to support the global chess community.</Highlight>
           </>
         )
       },
       {
         title: 'How It Works',
         content: [
-          'Score Sheet Scanning: Users can scan their physical chess score sheets using the mobile app or web interface.',
-          'OCR Processing: AWS Textract processes the scanned images to convert handwritten notation into digital format.',
-          'Game Analysis: The system analyzes the game moves and provides insights into the player\'s performance.',
-          'Cloud Storage: All games are stored securely in AWS S3 and DynamoDB for easy access and sharing.'
-        ]
-      },
-      {
-        title: 'Key Technologies',
-        content: [
-          'Frontend: React/TypeScript for a modern and responsive user interface.',
-          'Backend: .NET Core for robust and scalable server-side processing.',
-          'Cloud Services: AWS (S3, DynamoDB, Textract, Lambda) for scalable infrastructure.',
-          'Machine Learning: TensorFlow and OpenCV for advanced image processing and recognition.'
+          'Scan Sheets: Upload physical scoresheets via the web interface (mobile app coming soon).',
+          'AI Processing: Azure OCR, YOLO, ResNet, and TrOCR extract layout and handwritten moves.',
+          'Move Matching: Legal moves are predicted and matched to clean up recognition errors.',
+          'PGN Output: A polished PGN is generated for review, editing, and export.',
+          'Cloud Storage: All games are stored in AWS S3 and DynamoDB, accessible anytime.'
         ]
       },
       {
         title: 'Future Enhancements',
         content: [
-          'Mobile App Development: Creating native mobile apps for iOS and Android.',
-          'Enhanced ML Models: Developing more sophisticated image recognition algorithms.',
-          'Community Features: Implementing social features for chess players to connect and share.',
-          'Advanced Analytics: Adding deeper game analysis capabilities.',
-          'Multi-language Support: Making the platform accessible to chess players worldwide.'
+          'Native mobile apps for iOS & Android',
+          'Deeper move analysis & strategy insights',
+          'Multi-language support',
+          'Smarter ML models for layout and handwriting recognition',
+          'Community features for sharing and collaboration'
         ]
       }
     ]
@@ -170,7 +187,16 @@ const Projects = () => {
 
                 {/* Content Section */}
                 <div className="p-8 md:p-12">
-                  <h3 className="text-3xl font-bold text-white mb-6">{project.title}</h3>
+                  <div className="flex justify-between items-center mb-6">
+                    <h3 className="text-3xl font-bold text-white">{project.title}</h3>
+                    <span className={`px-3 py-1 rounded-full text-sm font-medium ${
+                      project.status === 'Planning' ? 'bg-blue-500/20 text-blue-300' :
+                      project.status === 'In Progress' ? 'bg-green-500/20 text-green-300' :
+                      'bg-gray-500/20 text-gray-300'
+                    }`}>
+                      {project.status}
+                    </span>
+                  </div>
                   <p className="text-white/80 mb-8">
                     <Highlight>{project.description}</Highlight>
                   </p>

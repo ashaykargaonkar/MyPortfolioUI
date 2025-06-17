@@ -7,7 +7,7 @@ const projects = [
   {
     title: 'AshayTalks Upgrade',
     description: 'A new version of AshayTalks where users can talk directly to the chatbot. Personal interaction features are being integrated.',
-    status: 'In Development',
+    status: 'Coming Next',
     statusColor: 'bg-blue-500/20 text-blue-400'
   },
   {

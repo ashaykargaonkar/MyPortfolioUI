@@ -1,9 +1,9 @@
 {
   "profile": {
     "name": "Ashay Kargaonkar",
-    "title": "Software Engineer",
+    "title": "Software Engineer / Machine Learning Engineer / Backend Developer / Cloud & API Specialist",
     "maritalStatus": "Single",
-    "location": "Chicago, IL, USA",
+    "location": "Chicago, IL, USA (Open to Relocation)",
     "homeTown": "Nagpur, India",
     "height": "6'1",
     "hobbies": [
@@ -15,30 +15,56 @@
       "Playing Online Video games like Valorant and Dota 2 or open to try new ones"
     ],
     "skills": [
-      "Creating BackendEnd web apis",
-      "Deployment of the application on AWS cloud using various services",
-      "Database design and migration",
-      "Create and apply Machine Learning Models",
-      "Data Preprocessing and providing advance data analysis",
-      "Bug fixing and optimizing the code",
-      "Creating good test cases for the application",
-      "Learning more about AWS Cloud and Machine Learning/AI"
+      "Backend development using .NET and C#",
+      "REST API design and deployment on AWS",
+      "Database design, modeling, and migration",
+      "Machine Learning and AI model development",
+      "Image classification and OCR processing",
+      "Cloud infrastructure setup with AWS and Azure",
+      "Data analysis and predictive modeling",
+      "Building full-stack apps with React/Next.js",
+      "Creating test cases and automating deployments",
+      "CI/CD pipeline automation",
+      "Container orchestration with Kubernetes",
+      "Cloud security and compliance",
+      "Performance optimization and scalability",
+      "Microservices architecture design",
+      "Serverless computing with AWS Lambda",
+      "Data pipeline development",
+      "Real-time data processing",
+      "Cloud cost optimization",
+      "Infrastructure as Code (IaC)"
     ],
     "toolsAndTechnology": [
       ".NET",
       "C#",
-      "JavaScript",
-      "ChatGPT",
       "Python",
       "R",
-      "R Studio",
-      "Visual Studio and Visual Studio Code",
-      "AWS DynamoDB",
-      "AWS Parameter Store",
-      "And many other AWS services too",
-      "Java",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Next.js",
       "Postman",
-      "JIRA"
+      "SQL",
+      "DynamoDB",
+      "Azure OCR",
+      "AWS SageMaker",
+      "Lambda",
+      "S3",
+      "Cognito",
+      "Parameter Store",
+      "Docker",
+      "Kubernetes",
+      "GitHub",
+      "Harness",
+      "Tableau",
+      "Jupyter Notebook",
+      "TrOCR",
+      "YOLO",
+      "ResNet",
+      "TensorFlow",
+      "WindSurf",
+      "Veracode"
     ],
     "contact": {
       "email": "ashaykargaonkar@gmail.com",
@@ -52,31 +78,26 @@
         "position": "Software Engineer",
         "company": "Tata Consultancy Services",
         "client": "United Airlines",
-        "workTime": "March 2022 - Present",
+        "workTime": "March 2022 - June 2025",
         "workLocation": "Chicago, IL",
         "description": [
-          "Successfully migrated a legacy lounge pass management system for United Airlines, transferring ~21 million OneTimePass records from an SQL database to AWS DynamoDB, ensuring a seamless transition with zero data loss.",
-          "Designed optimized database tables in AWS DynamoDB and implemented scalable web APIs using C# and .NET, enhancing system functionality, data retrieval, and integration with AWS infrastructure.",
-          "Extensively worked with AWS services, including DynamoDB for storage, Lambda for serverless workflows, Parameter Store for secure configuration management, and EKS for deploying and managing containerized applications, ensuring scalability and performance.",
-          "Collaborated with DevOps engineers to deploy the application securely and efficiently using Veracode for security scanning and Harness pipelines for CI/CD automation, delivering high-quality releases.",
-          "Leveraged Docker to containerize the application, ensuring consistent development workflows across environments and enabling streamlined deployment processes.",
-          "Partnered with testers to identify, debug, and resolve application issues, guaranteeing high-quality releases and a seamless user experience."
+          "Modernized legacy .NET systems by upgrading frameworks, refactoring backend logic using MVC, and migrating to DynamoDB, resulting in improved system performance and reduced maintenance.",
+          "Designed and deployed scalable RESTful APIs using C# on AWS, created frontend components with React.js, and architected the overall system including database design, Lambda functions, and table backups.",
+          "Built and maintained CI/CD pipelines using Harness, GitHub, and Docker; created Postman collections for testers, implemented unit testing for APIs, and worked closely with QA to resolve bugs quickly and deliver features on time."
         ],
         "tools": [
+          ".NET",
+          "C#",
           "AWS DynamoDB",
           "AWS Lambda",
-          "AWS Parameter Store",
-          "AWS EKS",
-          ".NET C#",
-          "SQL",
+          "Parameter Store",
+          "React.js",
           "Docker",
-          "Kubernetes",
-          "Veracode",
           "Harness",
+          "GitHub",
           "Postman",
-          "Swagger/OpenAPI",
-          "boto3",
-          "Git"
+          "Veracode",
+          "Swagger/OpenAPI"
         ]
       },
       {
@@ -85,36 +106,34 @@
         "workTime": "January 2021 - March 2021",
         "workLocation": "Philadelphia, PA (Remote)",
         "description": [
-          "Fetched and analyzed sensor data stored in AWS RDS databases, accessed through MySQL Workbench, containing measurements from devices such as room usage, device activity, weather conditions, and various other sensor inputs.",
-          "Designed and developed machine learning models in R and Python to predict energy savings based on usage patterns and room occupancy, delivering actionable insights for optimizing energy consumption.",
-          "Performed statistical analysis on the sensor data to uncover trends and correlations, contributing to data-driven decision-making processes.",
-          "Created and visualized data insights using Tableau, designing analytical dashboards with interactive charts and tables for stakeholders to easily interpret complex data."
+          "Analyzed AWS RDS sensor data with MySQL to identify patterns in room and device usage, uncovering key insights for operational optimization and electricity conservation.",
+          "Developed predictive models in R and Python to improve energy efficiency, leveraging statistical analysis and data visualization using matplotlib and Tableau.",
+          "Built interactive dashboards to monitor trends and provide insights into room/device utilization."
         ],
         "tools": [
+          "AWS RDS",
           "MySQL",
+          "R",
+          "Python",
           "Jupyter Notebook",
-          "SQL Workbench",
-          "Tableau",
-          "R Studio"
+          "Tableau"
         ]
       },
       {
         "position": "Data Scientist",
         "company": "Ezeelo Consumer Service PVT LTD",
-        "workTime": "August 2018 - August 2019",
+        "workTime": "Aug 2018 - Aug 2019",
         "workLocation": "Nagpur, India",
         "description": [
-          "Analyzed customer data for Ezeelo, an online consumer retail service with over 20,000 customers worldwide, providing insights into product demand across different districts and predicting inventory requirements for various countries.",
-          "Researched and implemented a scalable machine learning algorithm to recommend similar products to users, increasing product sales by 8% through targeted recommendations.",
-          "Normalized large datasets using SQL and Python to extract relevant insights, and performed detailed statistical analysis using R Studio to identify trends and forecast inventory needs.",
-          "Visualized customer behavior, sales trends, and pricing insights using Tableau and ggplot2, creating interactive dashboards and detailed visualizations to assist stakeholders in data-driven decision-making.",
-          "Delivered actionable insights into product demand, enabling the company to optimize inventory distribution and enhance customer satisfaction across diverse regions"
+          "Analyzed customer data using SQL and Python to predict inventory needs and optimize global distribution through clustering and predictive algorithms.",
+          "Developed product recommendation models that led to an 18% increase in sales.",
+          "Designed interactive Tableau dashboards to visualize product demand and highlight emerging trends, enabling faster and more informed business decisions."
         ],
         "tools": [
-          "MySQL",
-          "Jupyter Notebook",
+          "SQL",
+          "Python",
           "Tableau",
-          "R Studio"
+          "Jupyter Notebook"
         ]
       }
     ],
@@ -133,34 +152,70 @@
       }
     ],
     "certifications": [
-      "AWS Cloud Practitioner (Udemy)",
-      "Machine Learning A-Z (Udemy)",
-      "Crash Course Electronics (Udemy)"
+      "AWS Cloud Practitioner (Udemy, 2023)",
+      "AWS AI Practitioner (Udemy, 2025)",
+      "Machine Learning A-Z (Udemy, 2023)",
+      "Deep Learning A-Z (Udemy, 2023)",
+      "Crash Course Electronics (Udemy, Ongoing)"
     ],
     "projects": [
       {
-        "name": "AshayTalks",
-        "technologies": "Frontend with React, backend with C# .NET, AI integration using GPT 4-o-mini.",
-        "description": "AshayTalks is an AI chatbot that provides a convenient way to explore my professional journey. Designed to save time and eliminate the hassle of navigating through traditional resumes or LinkedIn profiles, it offers users quick and clear insights into my career, skills, and experiences.",
-        "features": [
-          "Frontend: Built with React to create a modern, interactive, and user-friendly chat interface.",
-          "Backend: Powered by C# .NET to efficiently process inputs and manage data coordination.",
-          "AI Integration: Utilizes GPT 4-o-mini for natural language understanding and accurate responses."
+        "name": "ThinkMoves (ChessGrow)",
+        "technologies": [
+          ".NET (C#)",
+          "React",
+          "Next.js",
+          "Azure OCR",
+          "TrOCR",
+          "YOLO",
+          "ResNet",
+          "TensorFlow",
+          "AWS Lambda",
+          "AWS S3",
+          "DynamoDB",
+          "Cognito",
+          "Vercel",
+          "Postman"
         ],
-        "futureEnhancements": [
-          "Voice Interaction: Enabling users to speak to the chatbot instead of typing.",
-          "Personalized AI Persona: Developing the chatbot to mimic my voice, mannerisms, and style of communication for a more human-like interaction—similar to AI characters in movies like Chappie.",
-          "Expanding Knowledge Base: Continuously updating the underlying professional data as my career evolves.",
-          "Advanced Query Handling: Incorporating support for more complex questions and broader topics."
+        "description": [
+          "Built ThinkMoves – an AI-powered chess analysis platform that converts scanned scoresheets into accurate PGNs.",
+          "Developed custom backend logic using .NET for metadata extraction, chess move validation, and PGN generation.",
+          "Integrated Azure OCR, TrOCR, YOLO, ResNet, and TensorFlow for image layout classification and handwriting recognition.",
+          "Designed a clean and responsive frontend using Next.js and React for file upload, user review, and PGN display.",
+          "Deployed backend via AWS App Runner and frontend via Vercel. Leveraged AWS services for authentication, storage, and processing."
         ]
       },
       {
-        "name": "ThinkMove Core (ChessGrow)",
-        "technologies": "React for the frontend, C# .NET for the backend, AWS Textract for image processing, and AWS S3/DynamoDB for data storage and retrieval.",
-        "description": "ThinkMove Core, also known as ChessGrow, revolutionizes chess game analysis by enabling users to scan chess score sheets and convert them into PGN (Portable Game Notation) or FEN (Forsyth-Edwards Notation) formats. This project addresses the challenges of inaccurate chess notation and time-consuming game analysis by leveraging advanced image processing and machine learning techniques.",
-        "futureProspect": [
-          "There will be a mobile app where users can take images of their chess score sheets and instantly convert them into PGN format.",
-          "A new-era digital chess clock will be developed that connects to the phone for streamlined chess clock setup."
+        "name": "AshayTalks",
+        "technologies": [
+          "React",
+          "C# .NET",
+          "GPT-4o-mini",
+          "Next.js",
+          "Vercel",
+          "JSON data processing"
+        ],
+        "description": [
+          "AshayTalks is an AI chatbot that provides a convenient way for users and recruiters to explore my professional journey.",
+          "Frontend built with React and Next.js for a smooth, interactive chat interface. Hosted on Vercel.",
+          "Backend in C# .NET, handling data extraction from structured JSON and interacting with GPT-based models for dynamic answers.",
+          "Designed to replace traditional resume browsing with a conversational, insight-driven experience.",
+          "Planned future enhancements include voice interaction, custom AI persona, and real-time resume updates."
+        ]
+      },
+      {
+        "name": "Portfolio Website",
+        "technologies": [
+          "Next.js",
+          "React",
+          "TypeScript",
+          "WindSurf",
+          "Vercel"
+        ],
+        "description": [
+          "A vibe-coded portfolio website built with Next.js, TypeScript, React, and WindSurf, deployed on Vercel.",
+          "Designed for recruiters and visitors to explore my work, connect, and interact via an AI chatbot.",
+          "Continuously updated with new projects, features, and UI enhancements."
         ]
       }
     ]

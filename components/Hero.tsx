@@ -82,7 +82,7 @@ const Hero = () => {
               className="text-base md:text-lg lg:text-xl text-gray-300"
             >
               <Highlight>
-                I'm a Software Engineer and Data Scientist with 4+ years of experience, including 3+ years building robust backend APIs using C# .NET and integrating systems with AWS. I specialize in combining engineering with AI to build real-world tools—like AshayTalks, a chatbot showcasing my journey and work, and ThinkMoves, an OCR-driven chess analytics platform.
+                I'm a Software Engineer and Machine Learning enthusiast with 4+ years of experience blending backend development with AI-powered solutions. I specialize in building scalable APIs using C# and .NET, deploying cloud-native systems on AWS, and applying machine learning to solve real-world problems.
               </Highlight>
             </motion.p>
           </motion.div>
@@ -101,7 +101,10 @@ const Hero = () => {
               className="text-base md:text-lg lg:text-xl text-gray-300"
             >
               <Highlight>
-                With a Master's in Computer Science, I bring strong technical expertise and a product-driven mindset. I'm passionate about clean architecture, automation, and transforming ideas into impactful solutions. Based in Chicago and open to relocation, I'm eager to collaborate on meaningful projects at the intersection of software, data, and innovation.
+                My work includes ThinkMoves — an AI-driven platform that converts handwritten chess scoresheets into digital PGNs using OCR, computer vision, and cloud automation — and AshayTalks, a personal AI chatbot built to make my career story instantly accessible.
+              </Highlight>
+              <Highlight>
+                With a Master's in Computer Science and hands-on experience across full-stack development, cloud infrastructure, and applied machine learning, I bring both technical depth and a product-focused mindset. Based in Chicago and open to relocation, I’m passionate about building tools that sit at the intersection of software, data, and user impact.
               </Highlight>
             </motion.p>
           </motion.div>

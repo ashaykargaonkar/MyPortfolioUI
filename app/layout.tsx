@@ -6,8 +6,8 @@ import { JsonLd, getPersonSchema } from '@/components/StructuredData'
 
 const inter = Inter({ subsets: ['latin'] })
 
-const title = 'Ashay Kargaonkar - Software Engineer & Data Scientist';
-const description = 'Software Engineer & Data Scientist with 4+ years of experience in C# .NET, AWS, and AI. Specializing in building robust backend systems and intelligent applications.';
+const title = 'Ashay Kargaonkar - Software Engineer | Machine Learning Engineer | API & Cloud Specialist';
+const description = 'Software Engineer with 4+ years of experience in C# .NET, AWS, and machine learning. Skilled in TensorFlow, OpenCV, and OCR systems for building intelligent, data-driven applications.';
 const url = 'https://ashaykargaonkar.com';
 
 export const metadata: Metadata = {
