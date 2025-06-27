@@ -18,8 +18,8 @@ const Highlight = ({ children }: { children: string }) => {
     'Software Engineer', 'Data Scientist', 'C#', '.NET', 'Web API',
     'backend systems', 'intelligent applications', 'cloud services',
     'engineering problems', 'technical focus', 'software development',
-    'AI', 'OCR', 'machine learning', 'data pipelines',
-    'chess analytics', 'Master\'s', 'Computer Science', 'AWS',
+    'machine learning', 'data pipelines',
+    'chess analytics', 'Master\'s', 'Computer Science',
     'database interactions', 'infrastructure', 'Chicago',
     'table tennis', 'tech ideas'
   ]
@@ -62,7 +62,7 @@ const projects: Project[] = [
       'Natural Language Processing'
     ],
     image: '/ChatGPT Image AshayTalks.png',
-    status: 'Planning',
+    status: 'Coming Next',
     details: [
       {
         title: 'Overview',
@@ -190,8 +190,9 @@ const Projects = () => {
                   <div className="flex justify-between items-center mb-6">
                     <h3 className="text-3xl font-bold text-white">{project.title}</h3>
                     <span className={`px-3 py-1 rounded-full text-sm font-medium ${
-                      project.status === 'Planning' ? 'bg-blue-500/20 text-blue-300' :
+                      project.status === 'Planning' ? 'bg-yellow-500/20 text-yellow-300' :
                       project.status === 'In Progress' ? 'bg-green-500/20 text-green-300' :
+                      project.status === 'Coming Next' ? 'bg-blue-500/20 text-blue-300' :
                       'bg-gray-500/20 text-gray-300'
                     }`}>
                       {project.status}

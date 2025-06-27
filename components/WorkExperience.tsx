@@ -3,6 +3,8 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
+const textBlue = 'text-blue-400'
+
 const WorkExperience = () => {
   return (
     <section id="work-experience" className="py-12 md:py-24 bg-gradient-to-b from-gray-900 to-black">
@@ -24,7 +26,7 @@ const WorkExperience = () => {
                 <h4 className="text-lg sm:text-xl font-semibold text-blue-400">Tata Consultancy Services</h4>
               </div>
               <div className="flex flex-col items-end">
-                <p className="text-gray-300">March 2022 - Present</p>
+                <p className="text-gray-300">March 2022 - June 2025</p>
                 <p className="text-gray-300">Location: Chicago, IL</p>
               </div>
             </div>
@@ -35,13 +37,13 @@ const WorkExperience = () => {
 
             <div className="space-y-4 mt-6">
               <p className="text-gray-300 text-sm sm:text-base">
-                Modernized legacy .NET systems by upgrading frameworks, refactoring backend logic using <span className="text-blue-400 font-semibold">MVC</span>, and migrating to <span className="text-blue-400 font-semibold">DynamoDB</span>, resulting in improved system performance and reduced maintenance.
+                Modernized legacy .NET systems by upgrading frameworks, refactoring backend logic using MVC, and migrating to DynamoDB, resulting in improved system performance and reduced maintenance.
               </p>
               <p className="text-gray-300 text-sm sm:text-base">
-                Designed and deployed scalable <span className="text-blue-400 font-semibold">RESTful APIs</span> using <span className="text-blue-400 font-semibold">C#</span> on AWS, created frontend components with <span className="text-blue-400 font-semibold">React.js</span>, and architected the overall system including database design, Lambda functions, and table backups.
+                Designed and deployed scalable RESTful APIs using C# on AWS, created frontend components with React.js, and architected the overall system including database design, Lambda functions, and table backups.
               </p>
               <p className="text-gray-300 text-sm sm:text-base">
-                Built and maintained CI/CD pipelines using <span className="text-blue-400 font-semibold">Harness</span>, <span className="text-blue-400 font-semibold">GitHub</span>, and <span className="text-blue-400 font-semibold">Docker</span>; created Postman collections for testers, implemented unit testing for APIs, and worked in close coordination with QA to resolve bugs quickly and deliver features on time within Agile workflows.
+                Built and maintained CI/CD pipelines using Harness, GitHub, and Docker; created Postman collections for testers, implemented unit testing for APIs, and worked in close coordination with QA to resolve bugs quickly and deliver features on time within Agile workflows.
               </p>
             </div>
 
@@ -51,12 +53,11 @@ const WorkExperience = () => {
                 <span className="text-blue-400 font-semibold text-xs sm:text-sm">.NET</span>
                 <span className="text-blue-400 font-semibold text-xs sm:text-sm">C#</span>
                 <span className="text-blue-400 font-semibold text-xs sm:text-sm">MVC</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">React.js</span>
+                <span className="text-blue-400 font-semibold text-xs sm:text-sm">Next.js</span>
                 <span className="text-blue-400 font-semibold text-xs sm:text-sm">AWS</span>
                 <span className="text-blue-400 font-semibold text-xs sm:text-sm">DynamoDB</span>
                 <span className="text-blue-400 font-semibold text-xs sm:text-sm">Lambda</span>
                 <span className="text-blue-400 font-semibold text-xs sm:text-sm">S3</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">App Runner</span>
                 <span className="text-blue-400 font-semibold text-xs sm:text-sm">Postman</span>
                 <span className="text-blue-400 font-semibold text-xs sm:text-sm">Docker</span>
                 <span className="text-blue-400 font-semibold text-xs sm:text-sm">GitHub</span>
@@ -67,6 +68,8 @@ const WorkExperience = () => {
                 <span className="text-blue-400 font-semibold text-xs sm:text-sm">RESTful APIs</span>
                 <span className="text-blue-400 font-semibold text-xs sm:text-sm">Unit Testing</span>
                 <span className="text-blue-400 font-semibold text-xs sm:text-sm">System Design</span>
+                <span className="text-blue-400 font-semibold text-xs sm:text-sm">Database Design</span>
+                <span className="text-blue-400 font-semibold text-xs sm:text-sm">Coordination with QA</span>
               </div>
             </div>
           </div>
@@ -80,16 +83,19 @@ const WorkExperience = () => {
               </div>
               <div className="flex flex-col items-end">
                 <p className="text-gray-300">January 2021 - March 2021</p>
+                <p className="text-gray-300">Location: Philadelphia, PA (Remote)</p>
               </div>
             </div>
 
             <div className="space-y-4 mt-6">
-              <p className="text-gray-300 text-sm sm:text-base">
-                Analyzed AWS RDS sensor data with <span className="text-blue-400 font-semibold">MySQL</span> to identify patterns in room and device usage, uncovering key insights for operational optimization and electricity conservation.
-              </p>
-              <p className="text-gray-300 text-sm sm:text-base">
-                Developed predictive models in <span className="text-blue-400 font-semibold">R and Python</span> to improve energy efficiency, leveraging statistical analysis and data visualization (matplotlib, Tableau) to uncover usage trends and support strategic decisions, while designing dashboards for monitoring.
-              </p>
+              <ul className="space-y-3">
+                <li className="text-gray-300">
+                  <span className="font-semibold">Analyzed AWS RDS sensor data using MySQL</span> to identify patterns in room and device usage.
+                </li>
+                <li className="text-gray-300">
+                  <span className="font-semibold">Developed predictive models in R and Python</span> to improve energy efficiency, leveraging statistical analysis and data visualization (matplotlib, Tableau) to uncover usage trends and support strategic decisions.
+                </li>
+              </ul>
             </div>
 
             <div className="mt-6">
@@ -128,15 +134,17 @@ const WorkExperience = () => {
             </div>
 
             <div className="space-y-4 mt-6">
-              <p className="text-gray-300 text-sm sm:text-base">
-                Analyzed customer data using <span className="text-blue-400 font-semibold">SQL and Python</span> to predict inventory needs and optimize global distribution through <span className="text-blue-400 font-semibold">clustering and predictive algorithms</span>.
-              </p>
-              <p className="text-gray-300 text-sm sm:text-base">
-                Developed product recommendation models that led to an <span className="text-blue-400 font-semibold">18% increase in sales</span>.
-              </p>
-              <p className="text-gray-300 text-sm sm:text-base">
-                Designed interactive <span className="text-blue-400 font-semibold">Tableau dashboards</span> to visualize product demand and highlight emerging trends, enabling faster and more informed business decisions.
-              </p>
+              <ul className="space-y-3">
+                <li className="text-gray-300">
+                  <span className="font-semibold">Analyzed customer data using SQL and Python</span> to predict inventory needs and optimize global distribution through clustering and predictive algorithms.
+                </li>
+                <li className="text-gray-300">
+                  <span className="font-semibold">Developed product recommendation models that led to an 18% increase in sales.</span>
+                </li>
+                <li className="text-gray-300">
+                  <span className="font-semibold">Designed interactive Tableau dashboards</span> to visualize product demand and highlight emerging trends, enabling faster and more informed business decisions.
+                </li>
+              </ul>
             </div>
 
             <div className="mt-6">

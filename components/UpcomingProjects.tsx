@@ -5,22 +5,22 @@ import { motion } from 'framer-motion';
 
 const projects = [
   {
+    title: 'ThinkMoves',
+    description: 'A powerful tool to analyze and convert chess scoresheets into digital PGNs. Select access will be provided soon. Development is ongoing.',
+    status: 'In Progress',
+    statusColor: 'bg-emerald-500/20 text-emerald-400'
+  },
+  {
     title: 'AshayTalks Upgrade',
     description: 'A new version of AshayTalks where users can talk directly to the chatbot. Personal interaction features are being integrated.',
     status: 'Coming Next',
     statusColor: 'bg-blue-500/20 text-blue-400'
   },
   {
-    title: 'ThinkMoves',
-    description: 'A powerful tool to analyze and convert chess scoresheets into digital PGNs. Select access will be provided soon. Development is ongoing.',
-    status: 'Coming Soon',
-    statusColor: 'bg-purple-500/20 text-purple-400'
-  },
-  {
     title: 'STOXS',
     description: 'A smart assistant for sustainable investment suggestions. It analyzes portfolios to recommend long-term, steady-growth opportunities.',
     status: 'In Planning',
-    statusColor: 'bg-emerald-500/20 text-emerald-400'
+    statusColor: 'bg-purple-500/20 text-purple-400'
   }
 ];
 

@@ -3,31 +3,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
-const Highlight = ({ children }: { children: string }) => {
-  const keywords = [
-    'Software Engineer', 'Data Scientist', 'C#', '.NET', 'backend APIs',
-    'AWS', 'AshayTalks', 'chatbot', 'ThinkMoves', 'OCR-driven',
-    'chess analytics', 'Master\'s', 'Computer Science', 'clean architecture',
-    'automation', 'Chicago', 'relocation', 'software', 'data', 'innovation'
-  ]
-
-  const words = children.split(' ')
-  return (
-    <span>
-      {words.map((word, index) => {
-        const cleanWord = word.replace(/[^a-zA-Z0-9]/g, '')
-        if (keywords.includes(cleanWord)) {
-          return (
-            <span key={index} className="text-blue-400">
-              {word}{' '}
-            </span>
-          )
-        }
-        return word + ' '
-      })}
-    </span>
-  )
-}
+const textBlue = 'text-blue-400'
 
 const Hero = () => {
   return (
@@ -81,9 +57,7 @@ const Hero = () => {
               transition={{ duration: 1 }}
               className="text-base md:text-lg lg:text-xl text-gray-300"
             >
-              <Highlight>
-                I'm a Software Engineer and Machine Learning enthusiast with 4+ years of experience blending backend development with AI-powered solutions. I specialize in building scalable APIs using C# and .NET, deploying cloud-native systems on AWS, and applying machine learning to solve real-world problems.
-              </Highlight>
+              I'm a <span className={textBlue}>Software Engineer</span> and <span className={textBlue}>Machine Learning</span> enthusiast with <span className={textBlue}>4+ years</span> of experience blending <span className={textBlue}>backend development</span> with AI-powered solutions. I specialize in building scalable <span className={textBlue}>RESTful APIs</span> using <span className={textBlue}>C#</span> and <span className={textBlue}>.NET</span>, deploying cloud-native systems on <span className={textBlue}>AWS</span>, and applying machine learning to solve real-world problems.
             </motion.p>
           </motion.div>
 
@@ -100,12 +74,8 @@ const Hero = () => {
               transition={{ duration: 1 }}
               className="text-base md:text-lg lg:text-xl text-gray-300"
             >
-              <Highlight>
-                My work includes ThinkMoves — an AI-driven platform that converts handwritten chess scoresheets into digital PGNs using OCR, computer vision, and cloud automation — and AshayTalks, a personal AI chatbot built to make my career story instantly accessible.
-              </Highlight>
-              <Highlight>
-                With a Master's in Computer Science and hands-on experience across full-stack development, cloud infrastructure, and applied machine learning, I bring both technical depth and a product-focused mindset. Based in Chicago and open to relocation, I’m passionate about building tools that sit at the intersection of software, data, and user impact.
-              </Highlight>
+              My work includes <span className={textBlue}>ThinkMoves</span> — an AI-driven platform that converts handwritten chess scoresheets into digital PGNs using <span className={textBlue}>OCR</span>, <span className={textBlue}>computer vision</span>, and cloud automation — and <span className={textBlue}>AshayTalks</span>, a <span className={textBlue}>AI chatbot</span> built to make my career story instantly accessible.
+              With a <span className={textBlue}>Master's</span> in <span className={textBlue}>Computer Science</span> and hands-on experience across <span className={textBlue}>full-stack development</span>, <span className={textBlue}>cloud infrastructure</span>, and applied <span className={textBlue}>machine learning</span>, I bring both technical depth and a product-focused mindset. Based in <span className={textBlue}>Chicago</span> and <span className={textBlue}>open to relocation</span>, I’m passionate about building tools that sit at the intersection of software, data, and user impact.
             </motion.p>
           </motion.div>
 
