@@ -50,26 +50,26 @@ const WorkExperience = () => {
             <div className="mt-6">
               <h4 className="text-lg font-semibold mb-2">Tools & Technologies</h4>
               <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">.NET</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">C#</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">MVC</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">Next.js</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">AWS</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">DynamoDB</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">Lambda</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">S3</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">Postman</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">Docker</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">GitHub</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">Harness</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">Swagger</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">CI/CD</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">Agile</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">RESTful APIs</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">Unit Testing</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">System Design</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">Database Design</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">Coordination with QA</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">.NET</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">C#</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">MVC</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Next.js</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">AWS</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">DynamoDB</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Lambda</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">S3</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Postman</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Docker</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">GitHub</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Harness</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Swagger</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">CI/CD</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Agile</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">RESTful APIs</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Unit Testing</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">System Design</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Database Design</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Coordination with QA</span>
               </div>
             </div>
           </div>
@@ -101,21 +101,21 @@ const WorkExperience = () => {
             <div className="mt-6">
               <h4 className="text-lg font-semibold mb-2">Tools & Technologies</h4>
               <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">AWS RDS</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">MySQL</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">Python</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">R</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">matplotlib</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">Tableau</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">Jupyter Notebook</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">Data Analysis</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">Predictive Modeling</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">Statistical Analysis</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">Energy Optimization</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">Sensor Data Processing</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">Data Visualization</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">Dashboard Design</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">Trend Analysis</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">AWS RDS</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">MySQL</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Python</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">R</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">matplotlib</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Tableau</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Jupyter Notebook</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Data Analysis</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Predictive Modeling</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Statistical Analysis</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Energy Optimization</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Sensor Data Processing</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Data Visualization</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Dashboard Design</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Trend Analysis</span>
               </div>
             </div>
           </div>
@@ -150,20 +150,20 @@ const WorkExperience = () => {
             <div className="mt-6">
               <h4 className="text-lg font-semibold mb-2">Tools & Technologies</h4>
               <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">SQL</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">Python</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">R Studio</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">Tableau</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">Jupyter Notebook</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">Data Analysis</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">Predictive Modeling</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">Clustering</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">Recommendation Systems</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">Data Visualization</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">Statistical Analysis</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">Machine Learning</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">Customer Segmentation</span>
-                <span className="text-blue-400 font-semibold text-xs sm:text-sm">Product Forecasting</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">SQL</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Python</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">R Studio</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Tableau</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Jupyter Notebook</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Data Analysis</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Predictive Modeling</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Clustering</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Recommendation Systems</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Data Visualization</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Statistical Analysis</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Machine Learning</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Customer Segmentation</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Product Forecasting</span>
               </div>
             </div>
           </div>
