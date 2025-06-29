@@ -44,57 +44,6 @@ const Highlight = ({ children }: { children: string }) => {
 
 const projects: Project[] = [
   {
-    title: 'AshayTalks',
-    description: 'An AI-powered chatbot designed to make my professional journey easy to explore.',
-    tech: [
-      'React',
-      'Next.js',
-      'TypeScript',
-      'C#',
-      '.NET Core',
-      'JSON',
-      'GPT-4o-mini',
-      'Vercel',
-      'Postman',
-      'GitHub',
-      'Vibe Coding',
-      'AI Chatbot',
-      'Natural Language Processing'
-    ],
-    image: '/ChatGPT Image AshayTalks.png',
-    status: 'Coming Next',
-    details: [
-      {
-        title: 'Overview',
-        content: (
-          <>
-            <Highlight>AshayTalks is a personal AI chatbot I created to give recruiters and collaborators a faster, more intuitive way to understand my background—without digging through resumes or LinkedIn profiles. Built with GPT-4o-mini, it provides clear, reliable answers about my work experience, technical skills, and projects.</Highlight>
-            <br /><br />
-            <Highlight>I developed AshayTalks to save time during hiring conversations and to offer a more interactive way to showcase who I am professionally. It’s continuously evolving as I add new projects, skills, and experiences, making it a living reflection of my growth as a Software Engineer and Data Scientist.</Highlight>
-          </>
-        )
-      },
-      {
-        title: 'How It Works',
-        content: [
-          'User Interaction: Access the chatbot through a floating chat button at the bottom-right corner of the webpage. Simply type your questions directly into the chat window.',
-          'Query Processing: When you type a question, it is sent directly to GPT 4-o-mini, along with a structured JSON file containing my professional details. The AI processes the information and formulates a relevant response.',
-          'AI Integration: The chatbot uses GPT 4-o-mini to analyze your query along with the data and generate an appropriate response.',
-          'Response Delivery: Once the response is generated, it is sent back to the chat window, where you can view and interact with it seamlessly.'
-        ]
-      },
-      {
-        title: 'Future Enhancements',
-        content: [
-          'Voice Interaction: Enabling users to speak to the chatbot instead of typing.',
-          'Personalized AI Persona: Developing the chatbot to mimic my voice, mannerisms, and style of communication-similar to AI characters in movies like Chappie.',
-          'Expanding Knowledge Base: Continuously updating the underlying professional data as my career evolves.',
-          'Advanced Query Handling: Incorporating support for more complex questions and broader topics.'
-        ]
-      }
-    ]
-  },
-  {
     title: 'ThinkMoves',
     description: 'AI-powered chess analysis platform converting handwritten scoresheets into accurate digital PGNs.',
     tech: [
@@ -147,6 +96,57 @@ const projects: Project[] = [
         ]
       }
     ]
+  },
+  {
+    title: 'AshayTalks',
+    description: 'An AI-powered chatbot designed to make my professional journey easy to explore.',
+    tech: [
+      'React',
+      'Next.js',
+      'TypeScript',
+      'C#',
+      '.NET Core',
+      'JSON',
+      'GPT-4o-mini',
+      'Vercel',
+      'Postman',
+      'GitHub',
+      'Vibe Coding',
+      'AI Chatbot',
+      'Natural Language Processing'
+    ],
+    image: '/ChatGPT Image AshayTalks.png',
+    status: '',
+    details: [
+      {
+        title: 'How It Works',
+        content: [
+          'User Interaction: Access the chatbot through a floating chat button at the bottom-right corner of the webpage. Simply type your questions directly into the chat window.',
+          'Query Processing: When you type a question, it is sent directly to GPT 4-o-mini, along with a structured JSON file containing my professional details. The AI processes the information and formulates a relevant response.',
+          'AI Integration: The chatbot uses GPT 4-o-mini to analyze your query along with the data and generate an appropriate response.',
+          'Response Delivery: Once the response is generated, it is sent back to the chat window, where you can view and interact with it seamlessly.'
+        ]
+      },
+      {
+        title: 'Overview',
+        content: (
+          <>
+            <Highlight>AshayTalks is a personal AI chatbot I created to give recruiters and collaborators a faster, more intuitive way to understand my background—without digging through resumes or LinkedIn profiles. Built with GPT-4o-mini, it provides clear, reliable answers about my work experience, technical skills, and projects.</Highlight>
+            <br /><br />
+            <Highlight>I developed AshayTalks to save time during hiring conversations and to offer a more interactive way to showcase who I am professionally. It’s continuously evolving as I add new projects, skills, and experiences, making it a living reflection of my growth as a Software Engineer and Data Scientist.</Highlight>
+          </>
+        )
+      },
+      {
+        title: 'Future Enhancements',
+        content: [
+          'Voice Interaction: Enabling users to speak to the chatbot instead of typing.',
+          'Personalized AI Persona: Developing the chatbot to mimic my voice, mannerisms, and style of communication-similar to AI characters in movies like Chappie.',
+          'Expanding Knowledge Base: Continuously updating the underlying professional data as my career evolves.',
+          'Advanced Query Handling: Incorporating support for more complex questions and broader topics.'
+        ]
+      }
+    ]
   }
 ]
 
@@ -188,7 +188,19 @@ const Projects = () => {
                 {/* Content Section */}
                 <div className="p-8 md:p-12">
                   <div className="flex justify-between items-center mb-6">
-                    <h3 className="text-3xl font-bold text-white">{project.title}</h3>
+                    <div className="flex items-center gap-4">
+                      <h3 className="text-3xl font-bold text-white">{project.title}</h3>
+                      {project.title === 'ThinkMoves' && (
+                        <a href="https://thinkmovesui.vercel.app" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-colors">
+                          <span className="flex items-center gap-2">
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                            Link to Website
+                          </span>
+                        </a>
+                      )}
+                    </div>
                     <span className={`px-3 py-1 rounded-full text-sm font-medium ${
                       project.status === 'Planning' ? 'bg-yellow-500/20 text-yellow-300' :
                       project.status === 'In Progress' ? 'bg-green-500/20 text-green-300' :
