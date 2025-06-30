@@ -116,15 +116,6 @@ const projects: Project[] = [
     status: 'Upgrade Coming Next',
     details: [
       {
-        title: 'How It Works',
-        content: [
-          'User Interaction: Access the chatbot through a floating chat button at the bottom-right corner of the webpage. Simply type your questions directly into the chat window.',
-          'Query Processing: When you type a question, it is sent directly to GPT 4-o-mini, along with a structured JSON file containing my professional details. The AI processes the information and formulates a relevant response.',
-          'AI Integration: The chatbot uses GPT 4-o-mini to analyze your query along with the data and generate an appropriate response.',
-          'Response Delivery: Once the response is generated, it is sent back to the chat window, where you can view and interact with it seamlessly.'
-        ]
-      },
-      {
         title: 'Overview',
         content: (
           <>
@@ -133,6 +124,15 @@ const projects: Project[] = [
             <Highlight>I developed AshayTalks to save time during hiring conversations and to offer a more interactive way to showcase who I am professionally. It’s continuously evolving as I add new projects, skills, and experiences, making it a living reflection of my growth as a Software Engineer and Data Scientist.</Highlight>
           </>
         )
+      },
+      {
+        title: 'How It Works',
+        content: [
+          'User Interaction: Access the chatbot through a floating chat button at the bottom-right corner of the webpage. Simply type your questions directly into the chat window.',
+          'Query Processing: When you type a question, it is sent directly to GPT 4-o-mini, along with a structured JSON file containing my professional details. The AI processes the information and formulates a relevant response.',
+          'AI Integration: The chatbot uses GPT 4-o-mini to analyze your query along with the data and generate an appropriate response.',
+          'Response Delivery: Once the response is generated, it is sent back to the chat window, where you can view and interact with it seamlessly.'
+        ]
       },
       {
         title: 'Future Enhancements',
