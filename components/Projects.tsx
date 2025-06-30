@@ -105,16 +105,12 @@ const projects: Project[] = [
       'React',
       'Next.js',
       'TypeScript',
-      'C#',
-      '.NET Core',
       'JSON',
       'GPT-4o-mini',
       'Vercel',
-      'Postman',
       'GitHub',
       'Vibe Coding',
       'AI Chatbot',
-      'Natural Language Processing'
     ],
     image: '/ChatGPT Image AshayTalks.png',
     status: 'Upgrade Coming Next',
@@ -188,28 +184,28 @@ const Projects = () => {
 
                 {/* Content Section */}
                 <div className="p-8 md:p-12">
-                  <div className="flex justify-between items-center mb-6">
-                    <div className="flex items-center gap-4">
+                  <div className="flex flex-col gap-4 mb-6">
+                    <div className="flex items-center justify-between">
                       <h3 className="text-3xl font-bold text-white">{project.title}</h3>
-                      {project.title === 'ThinkMoves' && (
-                        <a href="https://thinkmovesui.vercel.app" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-colors whitespace-nowrap text-sm md:text-base">
-                          <span className="flex items-center gap-2">
-                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                            </svg>
-                            Link to Website
-                          </span>
-                        </a>
-                      )}
+                      <span className={`px-3 py-1 rounded-full text-sm font-medium ${
+                        project.status === 'Planning' ? 'bg-yellow-500/20 text-yellow-300' :
+                        project.status === 'In Progress' ? 'bg-green-500/20 text-green-300' :
+                        project.status === 'Coming Next' ? 'bg-blue-500/20 text-blue-300' :
+                        'bg-gray-500/20 text-gray-300'
+                      }`}>
+                        {project.status}
+                      </span>
                     </div>
-                    <span className={`px-3 py-1 rounded-full text-sm font-medium ${
-                      project.status === 'Planning' ? 'bg-yellow-500/20 text-yellow-300' :
-                      project.status === 'In Progress' ? 'bg-green-500/20 text-green-300' :
-                      project.status === 'Coming Next' ? 'bg-blue-500/20 text-blue-300' :
-                      'bg-gray-500/20 text-gray-300'
-                    }`}>
-                      {project.status}
-                    </span>
+                    {project.title === 'ThinkMoves' && (
+                      <a href="https://thinkmovesui.vercel.app" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-colors whitespace-nowrap text-sm md:text-base w-full flex items-center justify-center">
+                        <span className="flex items-center gap-2">
+                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                          </svg>
+                          <span>Link to Website</span>
+                        </span>
+                      </a>
+                    )}
                   </div>
                   <p className="text-white/80 mb-8">
                     <Highlight>{project.description}</Highlight>
@@ -262,10 +258,12 @@ const Projects = () => {
             <ul className="space-y-3">
               {section.content.map((item, itemIndex) => (
                 <li key={itemIndex} className="text-white/80 flex items-start">
-                  <svg className="w-5 h-5 text-blue-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  <span>
+                  <span className="text-blue-500 w-5 h-5 flex items-center justify-center">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </span>
+                  <span className="ml-4">
                     <Highlight>{item}</Highlight>
                   </span>
                 </li>
