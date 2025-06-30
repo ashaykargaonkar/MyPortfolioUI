@@ -87,12 +87,12 @@ const Hero = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
             <a
-              href="/AshayKargaonkarResume.pdf"
+              href="/Ashay-Kargaonkar-Backend Software Engineer  Machine Learning Engineer  Cloud & API Specialist.pdf"
               className="inline-block bg-blue-400 text-white px-8 py-4 rounded-lg hover:bg-blue-500 transition-colors duration-300"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Download Resume
+              View Resume
             </a>
           </motion.div>
         </div>
