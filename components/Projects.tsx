@@ -116,7 +116,7 @@ const projects: Project[] = [
       'Natural Language Processing'
     ],
     image: '/ChatGPT Image AshayTalks.png',
-    status: '',
+    status: 'Upgrade Coming Next',
     details: [
       {
         title: 'How It Works',
