@@ -11,10 +11,9 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const menuItems = [
-    { id: 1, text: 'About', href: '#about' },
-    { id: 2, text: 'Work Experience', href: '#work-experience' },
-    { id: 3, text: 'Projects', href: '#projects' },
-    { id: 4, text: 'Skills', href: '#skills' }
+    { id: 1, text: 'Work Experience', href: '#work-experience' },
+    { id: 2, text: 'Projects', href: '#projects' },
+    { id: 3, text: 'Skills', href: '#skills' }
   ]
 
   const handleScroll = (e, sectionId) => {
