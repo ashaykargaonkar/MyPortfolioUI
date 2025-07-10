@@ -31,20 +31,34 @@ const WorkExperience = () => {
               </div>
             </div>
           
-            <div className="mt-4">
+            <div className="space-y-4 mt-6">
               <p className="text-gray-300 mb-2">Client: United Airlines</p>
             </div>
 
             <div className="space-y-4 mt-6">
-              <p className="text-gray-300 text-sm sm:text-base">
-                Modernized legacy .NET systems by upgrading frameworks, refactoring backend logic using MVC, and migrating to DynamoDB, resulting in improved system performance and reduced maintenance.
-              </p>
-              <p className="text-gray-300 text-sm sm:text-base">
-                Designed and deployed scalable RESTful APIs using C# on AWS, created frontend components with React.js, and architected the overall system including database design, Lambda functions, and table backups.
-              </p>
-              <p className="text-gray-300 text-sm sm:text-base">
-                Built and maintained CI/CD pipelines using Harness, GitHub, and Docker; created Postman collections for testers, implemented unit testing for APIs, and worked in close coordination with QA to resolve bugs quickly and deliver features on time within Agile workflows.
-              </p>
+              <ul className="space-y-3">
+                <li className="text-gray-300">
+                  <span className="font-semibold">Migrated ~21 million records</span> from SQL to AWS DynamoDB with zero data loss, improving scalability and performance.
+                </li>
+                <li className="text-gray-300">
+                  <span className="font-semibold">Developed and optimized RESTful APIs</span> using C# and .NET, integrated with AWS Lambda, Parameter Store, and DynamoDB.
+                </li>
+                <li className="text-gray-300">
+                  <span className="font-semibold">Built frontend components</span> with React and TypeScript, implementing dynamic routing and server-side rendering via Next.js.
+                </li>
+                <li className="text-gray-300">
+                  <span className="font-semibold">Containerized applications</span> using Docker and deployed to Kubernetes (EKS), streamlining CI/CD workflows.
+                </li>
+                <li className="text-gray-300">
+                  <span className="font-semibold">Collaborated with DevOps</span> to automate deployments using Harness pipelines and ensured secure coding with Veracode scans.
+                </li>
+                <li className="text-gray-300">
+                  <span className="font-semibold">Debugged and tested full-stack features</span> in coordination with QA, enhancing code reliability and user experience.
+                </li>
+                <li className="text-gray-300">
+                  <span className="font-semibold">Used Postman for API testing</span>, GitHub for version control, and AWS CloudWatch for system observability.
+                </li>
+              </ul>
             </div>
 
             <div className="mt-6">
@@ -90,10 +104,19 @@ const WorkExperience = () => {
             <div className="space-y-4 mt-6">
               <ul className="space-y-3">
                 <li className="text-gray-300">
-                  <span className="font-semibold">Analyzed AWS RDS sensor data using MySQL</span> to identify patterns in room and device usage.
+                  <span className="font-semibold">Analyzed sensor data</span> from AWS RDS (MySQL) to identify patterns in room usage and device activity.
                 </li>
                 <li className="text-gray-300">
-                  <span className="font-semibold">Developed predictive models in R and Python</span> to improve energy efficiency, leveraging statistical analysis and data visualization (matplotlib, Tableau) to uncover usage trends and support strategic decisions.
+                  <span className="font-semibold">Built predictive models</span> using R and Python to forecast energy savings based on room occupancy.
+                </li>
+                <li className="text-gray-300">
+                  <span className="font-semibold">Conducted statistical analysis</span> to uncover trends, correlations, and support data-driven decision-making.
+                </li>
+                <li className="text-gray-300">
+                  <span className="font-semibold">Designed interactive dashboards</span> in Tableau to visualize sensor insights for business stakeholders.
+                </li>
+                <li className="text-gray-300">
+                  <span className="font-semibold">Utilized SQL Workbench and Jupyter Notebook</span> for data extraction, transformation, and model evaluation.
                 </li>
               </ul>
             </div>
@@ -124,7 +147,7 @@ const WorkExperience = () => {
           <div className="bg-gray-800 rounded-lg p-4 sm:p-6 mb-8 sm:mb-12">
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-4">
               <div>
-                <h3 className="text-xl sm:text-2xl font-bold text-blue-400">Data Scientist</h3>
+                <h3 className="text-xl sm:text-2xl font-bold text-blue-400">Junior Web Developer</h3>
                 <h4 className="text-lg sm:text-xl font-semibold text-blue-400">Ezeelo Consumer Service PVT LTD</h4>
               </div>
               <div className="flex flex-col items-end">
@@ -136,13 +159,22 @@ const WorkExperience = () => {
             <div className="space-y-4 mt-6">
               <ul className="space-y-3">
                 <li className="text-gray-300">
-                  <span className="font-semibold">Analyzed customer data using SQL and Python</span> to predict inventory needs and optimize global distribution through clustering and predictive algorithms.
+                  <span className="font-semibold">Built and maintained responsive web pages</span> using HTML5, CSS3, JavaScript, and jQuery, ensuring smooth cross-browser performance.
                 </li>
                 <li className="text-gray-300">
-                  <span className="font-semibold">Developed product recommendation models that led to an 18% increase in sales.</span>
+                  <span className="font-semibold">Integrated RESTful APIs into frontend components</span> to enable real-time content updates and seamless data interactions.
                 </li>
                 <li className="text-gray-300">
-                  <span className="font-semibold">Designed interactive Tableau dashboards</span> to visualize product demand and highlight emerging trends, enabling faster and more informed business decisions.
+                  <span className="font-semibold">Used Bootstrap and AJAX</span> to enhance UI responsiveness, improve page load speed, and ensure layout consistency.
+                </li>
+                <li className="text-gray-300">
+                  <span className="font-semibold">Collaborated with backend developers and designers</span> to align frontend logic with business requirements and visual design.
+                </li>
+                <li className="text-gray-300">
+                  <span className="font-semibold">Participated in testing and debugging</span> of UI features across mobile and desktop platforms.
+                </li>
+                <li className="text-gray-300">
+                  <span className="font-semibold">Followed mobile-first and accessibility standards</span> to create clean, user-friendly interfaces.
                 </li>
               </ul>
             </div>
@@ -150,20 +182,17 @@ const WorkExperience = () => {
             <div className="mt-6">
               <h4 className="text-lg font-semibold mb-2">Tools & Technologies</h4>
               <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
-                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">SQL</span>
-                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Python</span>
-                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">R Studio</span>
-                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Tableau</span>
-                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Jupyter Notebook</span>
-                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Data Analysis</span>
-                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Predictive Modeling</span>
-                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Clustering</span>
-                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Recommendation Systems</span>
-                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Data Visualization</span>
-                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Statistical Analysis</span>
-                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Machine Learning</span>
-                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Customer Segmentation</span>
-                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Product Forecasting</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">HTML5</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">CSS3</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">JavaScript</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">jQuery</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Bootstrap</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">AJAX</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">REST APIs</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Responsive Design</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Cross-Browser Testing</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">VS Code</span>
+                <span className="px-3 py-1 bg-blue-400/20 rounded-full text-blue-400">Git</span>
               </div>
             </div>
           </div>

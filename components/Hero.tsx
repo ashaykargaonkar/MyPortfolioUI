@@ -87,7 +87,7 @@ const Hero = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
             <a
-              href="/Ashay-Kargaonkar-Backend Software Engineer  Machine Learning Engineer  Cloud & API Specialist.pdf"
+              href="/Ashay-Kargaonkar-Software Engineer.pdf"
               className="inline-block bg-blue-400 text-white px-8 py-4 rounded-lg hover:bg-blue-500 transition-colors duration-300"
               target="_blank"
               rel="noopener noreferrer"

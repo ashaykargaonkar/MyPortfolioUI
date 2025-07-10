@@ -46,22 +46,20 @@ const Highlight = ({ children }: { children: string }) => {
 const projects: Project[] = [
   {
     title: 'ThinkMoves',
-    description: 'AI-powered chess analysis platform converting handwritten scoresheets into accurate digital PGNs.',
+    description: '',
     tech: [
+      'App Runner',
+      'Azure OCR',
+      'Azure Document Intelligence',
+      'Chess.js',
       'React',
       'Next.js',
       'TypeScript',
       '.NET Core',
       'Cognito',
-      'App Runner',
-      'Azure OCR',
-      'TensorFlow',
-      'OpenCV',
-      'YOLO',
-      'ResNet',
-      'TrOCR',
       'Vercel',
-      'Chess.js'
+      'AWS S3',
+      'DynamoDB'
     ],
     image: '/ChatGPT Image ThinkMoves.png',
     status: 'In Progress',
@@ -70,37 +68,70 @@ const projects: Project[] = [
         title: 'Overview',
         content: (
           <>
-            <Highlight>ThinkMoves simplifies how players, coaches, and organizers review chess games by converting handwritten scoresheets into precise, shareable PGNs. Built with machine learning and computer vision, it eliminates manual data entry and unlocks effortless post-game analysis.</Highlight>
+            <Highlight>ThinkMoves is an AI-powered platform that converts handwritten chess scoresheets into accurate, digital PGNs, making post-game analysis fast, reliable, and shareable. It is built using Azure’s OCR and document classification services to automate the reading and interpretation of structured scoresheets.</Highlight>
             <br /><br />
-            <Highlight>Designed to adapt across different sheet formats, ThinkMoves uses advanced OCR, layout detection, and legal move validation to ensure accuracy and scalability. It's constantly evolving with smarter models and new features to support the global chess community.</Highlight>
+            <Highlight>Currently supporting the ThinkMoves scoresheet format, the platform identifies key regions like player names, game metadata, and move sequences. It validates extracted moves using chess rules, reconstructing the full game while allowing users to review and edit where needed.</Highlight>
+            <br /><br />
+            <Highlight>ThinkMoves reduces the effort for players, coaches, and tournament organizers by eliminating manual data entry and enabling digital access to game records. It is designed to expand to support more sheet formats, making it a scalable tool for the broader chess community.</Highlight>
           </>
         )
       },
       {
         title: 'How It Works',
-        content: [
-          'Scan Sheets: Upload physical scoresheets via the web interface (mobile app coming soon).',
-          'AI Processing: Azure OCR, YOLO, ResNet, and TrOCR extract layout and handwritten moves.',
-          'Move Matching: Legal moves are predicted and matched to clean up recognition errors.',
-          'PGN Output: A polished PGN is generated for review, editing, and export.',
-          'Cloud Storage: All games are stored in AWS S3 and DynamoDB, accessible anytime.'
-        ]
+        content: (
+          <>
+            <ul className="space-y-4">
+              <li className="text-gray-300">
+                <span className="font-semibold">Upload Sheets:</span> Users upload handwritten chess scoresheets through the web interface (mobile app coming soon).
+              </li>
+              <li className="text-gray-300">
+                <span className="font-semibold">AI-Powered Processing:</span> Azure Document Intelligence classifies the layout type, and Azure OCR extracts text from predefined regions (moves, player info, etc.).
+              </li>
+              <li className="text-gray-300">
+                <span className="font-semibold">Move Validation:</span> Extracted moves are matched against legal chess moves to fix recognition errors and ensure PGN accuracy.
+              </li>
+              <li className="text-gray-300">
+                <span className="font-semibold">PGN Generation:</span> The system assembles a clean PGN file with metadata, moves, and optional annotations for user review and editing.
+              </li>
+              <li className="text-gray-300">
+                <span className="font-semibold">Cloud Storage:</span> All parsed games are securely stored using AWS S3 and DynamoDB, accessible anytime from the user's profile.
+              </li>
+            </ul>
+          </>
+        )
       },
       {
         title: 'Future Enhancements',
-        content: [
-          'Native mobile apps for iOS & Android',
-          'Deeper move analysis & strategy insights',
-          'Multi-language support',
-          'Smarter ML models for layout and handwriting recognition',
-          'Community features for sharing and collaboration'
-        ]
+        content: (
+          <>
+            <ul className="space-y-4">
+              <li className="text-gray-300">
+                <span className="font-semibold">Native mobile apps for iOS & Android</span>
+              </li>
+              <li className="text-gray-300">
+                <span className="font-semibold">Support for additional scoresheet formats beyond ThinkMoves</span>
+              </li>
+              <li className="text-gray-300">
+                <span className="font-semibold">Advanced chess insights and post-game analysis tools</span>
+              </li>
+              <li className="text-gray-300">
+                <span className="font-semibold">Smarter ML models to improve recognition accuracy</span>
+              </li>
+              <li className="text-gray-300">
+                <span className="font-semibold">Multi-language OCR support</span>
+              </li>
+              <li className="text-gray-300">
+                <span className="font-semibold">Community features for sharing games and feedback</span>
+              </li>
+            </ul>
+          </>
+        )
       }
     ]
   },
   {
     title: 'AshayTalks',
-    description: 'An AI-powered chatbot designed to make my professional journey easy to explore.',
+    description: '',
     tech: [
       'React',
       'Next.js',
